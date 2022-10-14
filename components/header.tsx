@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {FaTimes, FaBars} from 'react-icons/fa'
+import {motion} from 'framer-motion'
 
 
 type Props = {}
@@ -19,7 +20,7 @@ export default function Header({}: Props) {
     const links = [
         {
             id: 1,
-            link: 'about me'
+            link: 'about'
         },
         {
             id: 2,
@@ -35,16 +36,43 @@ export default function Header({}: Props) {
         },
     ]
   return (
-    <header>
-        <div className='flex items-center justify-between w-full h-20 px-6 shadow-lg text-secondary bg-paper'>
-        <div className='n-left'>
+    <header className='sticky top-0 w-full h-20 p-4 px-6 shadow-lg text-secondary bg-paper'>
+        <div className='flex items-center justify-between'>
+        <motion.div className='n-left'
+        initial={{
+            x:-500,
+            opacity:0,
+            scale:0.6
+        }}
+        animate={{
+            x:0,
+            opacity:1,
+            scale:1
+        }}
+        transition={{
+            duration:1.5
+        }}>
         <img
             src='./assets/logo.png'
             alt="myLogo"
             className="w-16"
           ></img>
-        </div>
+        </motion.div>
         
+        <motion.div
+        initial={{
+            x:500,
+            opacity:0,
+            scale:0.5,
+        }}
+        animate={{
+            x:0,
+            opacity:1,
+            scale:1
+        }}
+        transition={{
+            duration:1.5
+        }}>
         <ul className='hidden md:flex'>
 
             {links.map(({id, link}) => (
@@ -68,7 +96,7 @@ export default function Header({}: Props) {
         </div>
         
         {nav && (
-            <ul className='relative top-0 left-0 flex flex-col items-center justify-center'>
+            <ul className='absolute right-0 flex flex-col items-center justify-center top-20'>
             {links.map(({id, link}) => (
                     <li 
                     key={id}
@@ -78,7 +106,8 @@ export default function Header({}: Props) {
 
             ))}
         </ul>       
-        )}     
+        )}   
+    </motion.div>  
         
     </div>
     </header>
