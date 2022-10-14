@@ -36,8 +36,8 @@ export default function Header({}: Props) {
         },
     ]
   return (
-    <header className='sticky top-0 w-full h-20 p-4 px-6 shadow-lg text-secondary bg-paper'>
-        <div className='flex items-center justify-between'>
+    <header className='sticky '>
+        <div className='top-0 flex items-center justify-between w-full h-20 px-6 shadow-lg text-secondary bg-paper'>
         <motion.div className='n-left'
         initial={{
             x:-500,
@@ -50,7 +50,7 @@ export default function Header({}: Props) {
             scale:1
         }}
         transition={{
-            duration:1.5
+            duration:1.3
         }}>
         <img
             src='./assets/logo.png'
