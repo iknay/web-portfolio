@@ -36,8 +36,8 @@ export default function Header({}: Props) {
         },
     ]
   return (
-    <header className='sticky '>
-        <div className='top-0 flex items-center justify-between w-full h-20 px-6 shadow-lg text-secondary bg-paper'>
+    <header className=''>
+        <div className='fixed top-0 flex items-center justify-between w-full h-20 px-6 shadow-lg text-secondary bg-paper'>
         <motion.div className='n-left'
         initial={{
             x:-500,
