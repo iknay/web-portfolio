@@ -5,9 +5,9 @@ type Props = {}
 export default function Main({}: Props) {
   return (
     <div
-    className='w-full max-h-screen'>
-      <div className='flex flex-col md:flex-row'>
-        <div className='flex flex-col items-center justify-center h-full max-w-screen-lg mx-auto'>
+    className='flex items-center justify-center w-full h-screen -mt-16'>
+      <div className='flex flex-col items-center justify-center md:flex-row'>
+        <div className='flex flex-col items-center justify-center max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-5xl font-bold sm:text-7xl md:flex-row'>
             <h1 className='text-secondary'>hello, i'm</h1>
             <h2 className='flex items-center justify-center md:ml-6 text-primary'>yancee</h2>

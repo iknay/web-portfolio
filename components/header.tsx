@@ -20,24 +20,24 @@ export default function Header({}: Props) {
     const links = [
         {
             id: 1,
-            link: 'about'
+            link: '// about'
         },
         {
             id: 2,
-            link: 'skills'
+            link: '// skills'
         },
         {
             id: 3,
-            link: 'projects'
+            link: '// projects'
         },
         {
             id: 4,
-            link: 'contact me'
+            link: '// contact me'
         },
     ]
   return (
-    <header className='sticky '>
-        <div className='top-0 flex items-center justify-between w-full h-20 px-6 shadow-lg text-secondary bg-paper'>
+    <header className='sticky'>
+        <div className='top-0 flex items-center justify-between w-full h-16 px-6 shadow-lg text-secondary bg-paper'>
         <motion.div className='n-left'
         initial={{
             x:-500,
@@ -50,10 +50,10 @@ export default function Header({}: Props) {
             scale:1
         }}
         transition={{
-            duration:1.3
+            duration:1.5
         }}>
         <img
-            src='./assets/logo.png'
+            src='./assets/pixelatedLogo.png'
             alt="myLogo"
             className="w-16"
           ></img>
