@@ -17,6 +17,7 @@ const Home: NextPage = () => {
       {/* <Main/> */}
       <section>
         <Main/>
+        <Main/>
       </section>
 
       {/* <About/> */}
