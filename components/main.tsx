@@ -33,7 +33,7 @@ export default function Main({ }: Props) {
                 scale: 1.2,
                 transition: { duration: .5 },
               }}
-               className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button>
+              className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button>
           </div>
           <div>
             <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" />
@@ -41,8 +41,29 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
           </div>
+          <div className='absolute overflow-hidden w-full h-screen -z-10'>
+            <motion.div initial={{
+              opacity: 0,
+            }}
+              animate={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 3
+              }}>
+              <motion.img
+                src='./assets/emoji _white flower_.png'
+                animate={{
+                  opacity: 1,
+                  rotate: 360,
+                }}
+                transition={{
+                  repeat: Infinity, type: "linear", duration: 30,
+                }}
+              ></motion.img>
+            </motion.div>
+          </div>
         </div>
-
       </div>
     </div>
   )
