@@ -31,7 +31,7 @@ export default function Main({ }: Props) {
             <motion.button
               whileHover={{
                 scale: 1.2,
-                transition: { duration: .5 },
+                transition: { duration: .3 },
               }}
                className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button>
           </div>
@@ -42,7 +42,7 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
           </div>
         </div>
-
+        
       </div>
     </div>
   )
