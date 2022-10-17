@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Yancee</title>
-        <link rel="icon" href="./assets/logo.png" />
+        <link rel="icon" href="./assets/pixelLogo.png" />
       </Head>
       
       {/* Header */}
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       
       {/* <Main/> */}
       <section>
+        <Main/>
         <Main/>
       </section>
 
