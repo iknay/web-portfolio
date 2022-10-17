@@ -78,7 +78,7 @@ export default function Header({}: Props) {
             {links.map(({id, link}) => (
                 <li 
                 key={id}
-                className='px-4 font-light cursor-pointer text-secondary'>
+                className='px-4 font-light cursor-pointer text-secondary hover:text-primary'>
                 {link}
                 </li>
 
