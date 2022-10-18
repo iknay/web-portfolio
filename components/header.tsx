@@ -1,11 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState, useRef} from 'react'
 import {FaTimes, FaBars} from 'react-icons/fa'
-import {motion} from 'framer-motion'
+import {motion,useCycle} from 'framer-motion'
+import {useDimensions} from './use-dimension'
+import {Navigation} from './nav'
+import {MenuToggle} from './navtoggle'
 
 
 type Props = {}
-
+const sidebar = {
+  open: (height = 900) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2
+    }
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40
+    }
+  }
+};
 export default function Header({}: Props) {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
 
   const [nav, setNav] = useState (false);
 
@@ -85,7 +110,8 @@ export default function Header({}: Props) {
             ))}
 
         </ul>
-        <div 
+        
+        {/* <div 
         onClick={() => setNav (!nav)} 
         onAnimationStart={triggerFade}
         className={`z-10 pr-4 duration-300 cursor-pointer text-secondary md:hidden
@@ -106,7 +132,18 @@ export default function Header({}: Props) {
 
             ))}
         </ul>       
-        )}   
+        )}    */}
+<motion.nav
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      custom={height}
+      ref={containerRef}
+      className={`z-10 pr-4 md:hidden `}
+    >
+      <motion.div  variants={sidebar}/>
+      <Navigation />
+      <MenuToggle toggle={() => toggleOpen()} />
+    </motion.nav>
     </motion.div>  
         
     </div>
