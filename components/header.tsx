@@ -35,6 +35,7 @@ export default function Header({}: Props) {
             link: '// contact me'
         },
     ]
+
   return (
     <header className=''>
         <div className='fixed top-0 flex items-center justify-between w-full h-16 px-6 shadow-lg bg-opacity-70 text-secondary bg-paper'>
