@@ -16,18 +16,18 @@ export default function Main({ }: Props) {
 
   return (
     <div
-      className='flex items-center justify-center w-full h-screen'>
+      className='flex items-center justify-center w-full h-screen bg-background z-20'>
       <div className='flex flex-col items-center justify-center w-full h-screen md:flex-row'>
         <div className='flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-3xl font-bold sm:text-7xl md:flex-row'>
             {/* <h1 className='text-secondary'>hello, i'm</h1>
             <h2 className='flex items-center justify-center md:ml-6 text-primary'>yancee</h2> */}
             <h1>
-              <span className='text-secondary'>{text}</span>
+              <span className='text-paper'>{text}</span>
               <Cursor cursorColor='#F08080' />
             </h1>
           </div>
-          <p className='py-3'>welcome to my portfolio</p>
+          <p className='py-3 text-paper'>welcome to my portfolio</p>
           <div className='py-3'>
             <motion.button
               whileHover={{
@@ -42,7 +42,7 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
           </div>
-          <div className='absolute w-full h-screen overflow-hidden -z-10'>
+          <div className='absolute w-full h-screen overflow-hidden opacity-25 -z-10'>
             <Background/>
           </div>
         </div>

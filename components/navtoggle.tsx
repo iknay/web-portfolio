@@ -5,7 +5,7 @@ const Path = ({ openPath, closedPath, ...rest }) => {
     <motion.path
       fill="transparent"
       strokeWidth="3"
-      stroke="hsl(0, 0%, 18%)"
+      stroke="hsl(0, 0%, 100%)"
       strokeLinecap="round"
       variants={{
         open: { d: openPath, transition: { duration: 0.3 } },

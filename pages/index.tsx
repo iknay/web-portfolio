@@ -3,6 +3,7 @@ import Head from 'next/head'
 import About from '../components/about'
 import Header from '../components/header'
 import Main from '../components/main'
+import Sidebar from '../components/navigationbar'
 
 const Home: NextPage = () => {
   return (
@@ -14,16 +15,16 @@ const Home: NextPage = () => {
       
       {/* Header */}
       <Header/>
+      <Sidebar/>
       
       {/* <Main/> */}
       <section>
         <Main/>
+        <About/>
       </section>
 
       {/* <About/> */}
-      <section>
-        <About/>
-      </section>
+        
 
       {/* <Skills/> */}
 

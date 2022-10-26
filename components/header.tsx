@@ -39,7 +39,7 @@ export default function Header({}: Props) {
   return (
     <header className="">
 
-      <div className="fixed top-0 flex items-center justify-between w-full h-16 px-6 shadow-lg bg-opacity-70 text-secondary bg-paper">
+      <div className="fixed z-10 top-0 flex items-center justify-between w-full h-16 px-6 shadow-lg bg-opacity-70 text-paper bg-background">
         <motion.div className="n-left" 
           initial={{x: -500, opacity: 0, scale: 0.6}}
           animate={{x: 0, opacity: 1, scale: 1}}
@@ -55,7 +55,7 @@ export default function Header({}: Props) {
           transition={{duration: 1.5,}}>
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
-              <li key={id} className="px-4 font-light cursor-pointer text-secondary hover:text-primary">
+              <li key={id} className="px-4 font-light cursor-pointer text-paper hover:text-primary">
                 {link}
               </li>))}
           </ul>

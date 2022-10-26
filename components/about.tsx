@@ -4,6 +4,6 @@ type Props = {}
 
 export default function About({}: Props) {
   return (
-    <div className='w-full h-screen'>about</div>
+    <div className='w-full h-screen bg-background'>about</div>
   )
 }
