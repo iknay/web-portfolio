@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/header'
 import Main from '../components/main'
+import Sidebar from '../components/navigationbar'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
         <title>Yancee</title>
         <link rel="icon" href="./assets/pixelLogo.png" />
       </Head>
-      
+      <Sidebar/>
       {/* Header */}
       <Header/>
       

@@ -10,4 +10,11 @@
         /* font-family: 'Nunito', sans-serif; */
         font-family: 'DotGothic16', sans-serif;
     }
+   
+  
 }
+@layer components {
+    .background {
+        @apply bg-white absolute top-0 left-0 bottom-0 w-[300px];
+      }
+  }
