@@ -17,7 +17,7 @@ export default function Background({}: Props) {
               <motion.img
                 src='./assets/flower-bg.png'
                 width="1200px"
-                className='mt-5 '
+                className='mt-5  '
                 animate={{
                   opacity: 1,
                   rotate: 360,

@@ -16,7 +16,7 @@ export default function Main({ }: Props) {
 
   return (
     <div
-      className='flex items-center justify-center w-full h-screen bg-background z-20'>
+      className='flex items-center justify-center w-full h-screen bg-background'>
       <div className='flex flex-col items-center justify-center w-full h-screen md:flex-row'>
         <div className='flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-3xl font-bold sm:text-7xl md:flex-row'>
@@ -42,7 +42,7 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
           </div>
-          <div className='absolute w-full h-screen overflow-hidden opacity-25 -z-10'>
+          <div className='absolute w-full h-screen overflow-hidden opacity-25 pointer-events-none'>
             <Background/>
           </div>
         </div>
