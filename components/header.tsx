@@ -53,7 +53,7 @@ export default function Header({}: Props) {
           initial={{x: 500, opacity: 0, scale: 0.5}}
           animate={{x: 0, opacity: 1, scale: 1}}
           transition={{duration: 1.5,}}>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex ">
             {links.map(({ id, link }) => (
               <li key={id} className="px-4 font-light cursor-pointer text-paper hover:text-primary">
                 {link}
@@ -61,6 +61,7 @@ export default function Header({}: Props) {
           </ul>
           
           </motion.div>
+          <Sidebar/>
       </div>
     </header>
   );
