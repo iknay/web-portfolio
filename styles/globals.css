@@ -11,3 +11,8 @@
         font-family: 'DotGothic16', sans-serif;
     }
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
