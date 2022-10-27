@@ -2,7 +2,7 @@ import React, { useState, useRef} from 'react'
 import {FaTimes, FaBars} from 'react-icons/fa'
 import {motion,useCycle} from 'framer-motion'
 import {useDimensions} from './use-dimension'
-import Sidebar from './navigationbar'
+import Sidebar from './sidebar'
 
 type Props = {}
 
@@ -39,7 +39,7 @@ export default function Header({}: Props) {
   return (
     <header className="">
 
-      <div className="fixed top-0 z-10 flex items-center justify-between w-full h-16 px-6 bg-opacity-100 shadow-lg bg-secondary text-paper">
+      <div className="fixed top-0 z-10 flex items-center justify-between w-full h-16 px-6 shadow-lg bg-opacity-70 bg-secondary text-paper">
         <motion.div className="n-left" 
           initial={{x: -500, opacity: 0, scale: 0.6}}
           animate={{x: 0, opacity: 1, scale: 1}}
@@ -48,6 +48,8 @@ export default function Header({}: Props) {
         <img src="./assets/pixelatedLogo.png" alt="myLogo"className="w-16"/>
 
         </motion.div>
+
+        <Sidebar/>
 
         <motion.div 
           initial={{x: 500, opacity: 0, scale: 0.5}}
@@ -61,6 +63,7 @@ export default function Header({}: Props) {
           </ul>
           
           </motion.div>
+          
       </div>
     </header>
   );

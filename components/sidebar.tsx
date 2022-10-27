@@ -26,7 +26,7 @@ export default function Sidebar() {
     // <motion.div initial={{opacity: 0}}
     // animate={{opacity: 1}}
     // transition={{duration: 1.5,}}>
-    <motion.nav className="fixed top-0 bottom-0 right-0 z-10 w-full h-screen md:hidden" initial={false} animate={isOpen ? "open" : "closed"}>
+    <motion.nav className="fixed top-0 bottom-0 right-0 w-full h-screen md:hidden" initial={false} animate={isOpen ? "open" : "closed"}>
       <motion.div className="absolute top-0 bottom-0 right-0 w-full bg-primary" variants={sidebarVariants} />
       <MenuToggler toggle={() => toggleOpen()} />
       <Navigation />
