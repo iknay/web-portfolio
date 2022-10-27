@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 
 const menuItemVariants: Variants = {
   open: {
-    x: 10,
+    x: 0,
     y: 70,
     opacity: 1,
     transition: {
@@ -12,7 +12,7 @@ const menuItemVariants: Variants = {
     },
   },
   closed: {
-    x: 10,
+    x: 0,
     y: -200,
     opacity: 0,
     transition: {
@@ -21,16 +21,16 @@ const menuItemVariants: Variants = {
     },
   },
 };
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+// const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 const MenuItem = ({i}) => {
-  const style = { border: `2px solid ${colors[i.id]}` };
+  const style = { border: `2px solid ${[i.id]}` };
   return (
     <motion.div layout>
-    <motion.li className="flex items-center mb-5 space-x-10 cursor-pointer overflow-hidden" variants={menuItemVariants} >
-      <span style={style} className="w-45 h-45 rounded full"></span>
-      <span style={style} className="flex-1 h-8 rounded-lg">
-        <text >{i.link}</text>
-      </span>
+    <motion.li className="text-4xl cursor-pointer text-secondary" variants={menuItemVariants} >
+      {/* <span style={style} className="rounded w-45 h-45 full"></span>
+      <span style={style} className="flex-1 mb-5 rounded-lg"> */}
+        <text>{i.link}</text>
+      {/* </span> */}
     </motion.li>
     </motion.div>
   );

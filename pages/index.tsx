@@ -7,7 +7,7 @@ import Sidebar from '../components/navigationbar'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className=' bg-secondary'>
       <Head>
         <title>Yancee</title>
         <link rel="icon" href="./assets/pixelLogo.png" />
@@ -20,11 +20,12 @@ const Home: NextPage = () => {
       {/* <Main/> */}
       <section>
         <Main/>
-        <About/>
       </section>
 
       {/* <About/> */}
-        
+      <section id='about'>
+      <About/>
+      </section>
 
       {/* <Skills/> */}
 

@@ -23,8 +23,8 @@ export default function Sidebar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <motion.nav className="md:hidden z-10 absolute top-0 right-0 bottom-0 w-full  h-screen" initial={false} animate={isOpen ? "open" : "closed"}>
-      <motion.div className="bg-red-300 opacity-100 absolute top-0 right-0 bottom-0  w-full" variants={sidebarVariants} />
+    <motion.nav className="fixed top-0 bottom-0 right-0 z-10 w-full h-screen md:hidden" initial={false} animate={isOpen ? "open" : "closed"}>
+      <motion.div className="absolute top-0 bottom-0 right-0 w-full bg-primary" variants={sidebarVariants} />
       <MenuToggler toggle={() => toggleOpen()} />
       <Navigation />
     </motion.nav>
