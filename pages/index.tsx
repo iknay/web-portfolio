@@ -15,7 +15,6 @@ const Home: NextPage = () => {
       
       {/* Header */}
       <Header/>
-      <Sidebar/>
       
       {/* <Main/> */}
       <section>

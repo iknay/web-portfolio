@@ -28,7 +28,7 @@ export default function Main({ }: Props) {
             </h1>
           </div>
           <p className='py-3 text-paper'>welcome to my portfolio</p>
-          <div className='py-3'>
+          <div className='py-3 z-20'>
             <motion.button
               whileHover={{
                 scale: 1.2,
@@ -36,7 +36,7 @@ export default function Main({ }: Props) {
               }}
               className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button>
           </div>
-          <div>
+          <div className='z-20'>
             <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
