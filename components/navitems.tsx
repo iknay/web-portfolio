@@ -26,7 +26,7 @@ const MenuItem = ({i}) => {
   const style = { border: `2px solid ${[i.id]}` };
   return (
     <motion.div layout>
-    <motion.li className="text-sm cursor-pointer text-secondary" variants={menuItemVariants} >
+    <motion.li className="mt-1 cursor-pointer text-md text-secondary" variants={menuItemVariants} >
       {/* <span style={style} className="rounded w-45 h-45 full"></span>
       <span style={style} className="flex-1 mb-5 rounded-lg"> */}
         <text>{i.link}</text>
