@@ -7,7 +7,7 @@ import Sidebar from '../components/sidebar'
 
 const Home: NextPage = () => {
   return (
-    <div className=' bg-secondary'>
+    <div className='z-0 h-screen overflow-scroll bg-secondary snap-y snap-mandatory'>
       <Head>
         <title>Yancee</title>
         <link rel="icon" href="./assets/pixelLogo.png" />
@@ -18,12 +18,12 @@ const Home: NextPage = () => {
       
       
       {/* <Main/> */}
-      <section>
+      <section id='main' className='snap-start'>
         <Main/>
       </section>
 
       {/* <About/> */}
-      <section id='about'>
+      <section id='about' className='snap-center'>
       <About/>
       </section>
 

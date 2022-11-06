@@ -49,7 +49,7 @@ export default function Header({}: Props) {
 
         </motion.div>
 
-        <Sidebar/>
+        
 
         <motion.div 
           initial={{x: 500, opacity: 0, scale: 0.5}}
@@ -63,6 +63,8 @@ export default function Header({}: Props) {
           </ul>
           
           </motion.div>
+       
+          <Sidebar/>
           
       </div>
     </header>
