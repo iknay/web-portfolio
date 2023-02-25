@@ -3,7 +3,9 @@ import Head from 'next/head'
 import About from '../components/about'
 import Header from '../components/header'
 import Main from '../components/main'
+import Projects from '../components/projects'
 import Sidebar from '../components/sidebar'
+import Skills from '../components/skills'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +18,6 @@ const Home: NextPage = () => {
       {/* Header */}
       <Header/>
       
-      
       {/* <Main/> */}
       <section id='main' className='snap-start'>
         <Main/>
@@ -28,8 +29,14 @@ const Home: NextPage = () => {
       </section>
 
       {/* <Skills/> */}
+      <section className='snap-start'>
+        <Skills/>
+      </section>
 
       {/* <Projects/> */}
+      <section className='snap-start'>
+        <Projects/>
+      </section>
 
       {/* <ContactMe/> */}
 

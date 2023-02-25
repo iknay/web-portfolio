@@ -4,12 +4,12 @@ import { motion, useCycle, Variants } from "framer-motion";
 import { useState } from "react";
 
 const sidebarVariants: Variants = {
-  open: {
+  open: (height:1000) => ({
     clipPath: `circle(80px at 150px 130px)`,
     transition: {
       duration: 0.8,
     },
-  },
+  }),
   closed: {
     clipPath: `circle(0px at 215px 20px)`,
     transition: {
