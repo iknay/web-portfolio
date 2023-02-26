@@ -22,11 +22,7 @@ const links = [
   {
       id: 3,
       link: '// projects'
-  },
-  {
-      id: 4,
-      link: '// contact me'
-  },
+  }
 ]
 const Navigation = () => {
   return (

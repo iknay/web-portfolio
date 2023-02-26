@@ -30,10 +30,6 @@ export default function Header({}: Props) {
             id: 3,
             link: '// projects'
         },
-        {
-            id: 4,
-            link: '// contact me'
-        },
     ]
 
   return (

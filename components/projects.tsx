@@ -1,10 +1,13 @@
 import React from 'react'
+import {motion} from 'framer-motion';
 
 type Props = {}
 
 function Projects({}: Props) {
   return (
-    <div className='relative flex flex-col items-center justify-center min-h-screen px-10 mx-auto text-center xl:px-10 max-w-[2000px] xl:flex-row text-paper'>projects</div>
+    <motion.div className='relative z-0 flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto text-center xl:px-10 md:flex-row text-paper'>
+        <h3 className='absolute top-24 tracking-[15px] text-2xl'> projects </h3>
+    </motion.div>
   )
 }
 

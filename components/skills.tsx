@@ -3,6 +3,8 @@ import {motion} from 'framer-motion';
 import HtmlSkill from './skills/htmlskill';
 import CssSkill from './skills/css';
 import Typescript from './skills/typescript';
+import ReactJs from './skills/reactjs';
+import NextJs from './skills/nextjs';
 
 type Props = {}
 
@@ -14,6 +16,8 @@ export default function Skills({}: Props) {
             <HtmlSkill/>
             <CssSkill/>
             <Typescript/>
+            <ReactJs/>
+            <NextJs/>
         </div>
     </motion.div>
   )

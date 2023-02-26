@@ -29,12 +29,12 @@ const Home: NextPage = () => {
       </section>
 
       {/* <Skills/> */}
-      <section className='snap-start'>
+      <section id='skills' className='snap-start'>
         <Skills/>
       </section>
 
       {/* <Projects/> */}
-      <section className='snap-start'>
+      <section id='projects' className='snap-start'>
         <Projects/>
       </section>
 

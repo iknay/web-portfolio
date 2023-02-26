@@ -25,7 +25,7 @@ export default function About({}: Props) {
       h-48 w-48 rounded-full md:rounded-lg md:w-56 md:h-72 xl:w-[400px] xl:h-[500px] xl:mt-20 mt-0'
       src="./assets/my_pic.jpg"/>
       <div className='flex items-center justify-center'>
-        <h4>hello</h4>
+        <h4>email me at yanceevillanueva16@gmail.com</h4>
       </div>
     </div>
   )
