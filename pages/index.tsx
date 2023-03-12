@@ -9,7 +9,8 @@ import Skills from '../components/skills'
 
 const Home: NextPage = () => {
   return (
-    <div className='z-0 h-screen overflow-scroll bg-secondary snap-y snap-mandatory'>
+    <div className='z-0 h-screen overflow-x-hidden overflow-y-scroll bg-secondary snap-y snap-mandatory
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F08080]/80'>
       <Head>
         <title>Yancee</title>
         <link rel="icon" href="./assets/pixelLogo.png" />
