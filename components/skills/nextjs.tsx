@@ -18,7 +18,7 @@ export default function NextJs({directionLeft}: Props) {
         whileHover={{scale: 1.2}}
         whileTap={{scale:1.1}}
         src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png"
-        className='object-cover w-24 h-24 border border-gray-500 rounded-full xl:w-32 xl:h-32 md:w-28 md:h-28'
+        className='object-cover w-20 h-20 border border-gray-500 rounded-full xl:w-32 xl:h-32 md:w-28 md:h-28'
       />
     </div>
   )

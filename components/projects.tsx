@@ -8,7 +8,7 @@ function Projects({}: Props) {
   return (
     <motion.div className='relative z-0 flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left justify-evenly md:flex-row text-paper'>
         <h3 className='absolute top-24 tracking-[15px] text-2xl'> projects </h3>
-        <div className='relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory'>
+        <div className='relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F08080]/80'>
           {projects.map((project) => (
             <div className='flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 space-y-5 snap-center md:p-44'>
               <img/>

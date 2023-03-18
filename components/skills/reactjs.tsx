@@ -18,7 +18,7 @@ export default function ReactJs({directionLeft}: Props) {
         whileHover={{scale: 1.2}}
         whileTap={{scale:1.1}}
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-        className='object-cover w-24 h-24 border border-gray-500 rounded-full xl:w-32 xl:h-32 md:w-28 md:h-28'
+        className='object-cover w-20 h-20 border border-gray-500 rounded-full xl:w-32 xl:h-32 md:w-28 md:h-28'
       />
     </div>
   )
