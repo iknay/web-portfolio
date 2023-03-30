@@ -16,6 +16,7 @@
     "react-icons": "^4.4.0",
     "react-simple-typewriter": "^4.0.5",
     "react-social-icons": "^5.15.0",
+    "sanity": "^3.8.1",
     "tailwind-scrollbar": "^2.1.0"
   },
   "devDependencies": {

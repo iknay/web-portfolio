@@ -42,7 +42,7 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
           </div>
-          <div className='absolute w-full h-screen overflow-hidden opacity-25 pointer-events-none'>
+          <div className='absolute overflow-hidden opacity-25 pointer-events-none xl:w-full xl:h-screen '>
             <Background/>
           </div>
         </div>
