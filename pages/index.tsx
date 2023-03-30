@@ -16,15 +16,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="./assets/pixelLogo.png" />
       </Head>
       
-      {/* Header */}
       <Header/>
       
-      {/* <Main/> */}
       <section id='main' className='snap-start'>
         <Main/>
       </section>
 
-      {/* <About/> */}
       <section id='about' className='snap-center'>
       <About/>
       </section>
