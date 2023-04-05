@@ -30,6 +30,10 @@ export default function Header({}: Props) {
             id: 3,
             link: '// projects'
         },
+        {
+          id: 4,
+          link: '// contact me'
+      },
     ]
 
   return (
@@ -41,7 +45,7 @@ export default function Header({}: Props) {
           animate={{x: 0, opacity: 1, scale: 1}}
           transition={{duration: 1.5}}>
 
-        <img src="./assets/pixelatedLogo.png" alt="myLogo"className="w-16"/>
+        <img src="./assets/pixelatedLogo.png" alt="myLogo"className="w-16 cursor-pointer"/>
 
         </motion.div>
 
@@ -53,7 +57,7 @@ export default function Header({}: Props) {
           transition={{duration: 1.5,}}>
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
-              <li key={id} className="flex px-4 font-light cursor-pointer text-paper hover:text-primary">
+              <li key={id} className="flex px-4 font-light cursor-pointer text-paper hover:text-primary hover:duration-500">
                 {link}
               </li>))}
           </ul>

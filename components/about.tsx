@@ -22,13 +22,12 @@ export default function About({}: Props) {
       }}
       viewport={{ once: true }}
       className='flex-shrink-0 object-cover flex items-center justify-center md:mt-16
-      h-48 w-48 rounded-full md:rounded-lg md:w-56 md:h-72 xl:w-[400px] xl:h-[500px] xl:mt-20 mt-10'
+      h-48 w-48 rounded-full md:rounded-lg md:w-56 md:h-72 xl:w-[400px] xl:h-[500px] xl:mt-20 mt-20'
       src="./assets/my_pic.jpg"/>
-      <div className='flex pl-4 pr-4 text-justify md:text-[10px}'>
-        <span><h3>Hi, I'm a front-end developer and UI designer who has a passion for <br></br> creating engaging and intuitive web applications. <br></br>
-          With my technical expertise in front-end development languages <br></br>like HTML, CSS, ReactJS, and TypeScript,<br></br> as well as my back-end knowledge of programming <br></br>languages such as Python and Node.js, <br></br>
-          I am able to build seamless, responsive, and scalable <br></br> web applications from start to finish.</h3><br></br>
-        <h4>email me at yanceevillanueva16@gmail.com</h4>
+      <div className='flex text-justify md:text-[10px] xl:text-[16px] xl:p-28 text-sm -mt-6'>
+        <span><h3>Hi, I'm a front-end developer and UI designer who has a passion for creating engaging and intuitive web applications.
+          With my technical expertise in front-end development languages like HTML, CSS, ReactJS, and TypeScript, as well as my back-end knowledge of programming languages such as Python and Node.js,
+          I am able to build seamless, responsive, and scalable web applications from start to finish.</h3>
         </span>
       </div>
     </div>
