@@ -29,12 +29,14 @@ export default function Main({ }: Props) {
           </div>
           <p className='py-3 text-paper'>welcome to my portfolio</p>
           <div className='py-3'>
+          <a href='https://drive.google.com/file/d/1mBsL6lrEPjeKU4UR6526GJ330UIJH2og/view?usp=sharing' 
+              target = "_blank">
             <motion.button
               whileHover={{
                 scale: 1.2,
                 transition: { duration: .3 },
               }}
-              className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button>
+              className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button></a>
           </div>
           <div>
             <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" />

@@ -6,7 +6,7 @@ import Main from '../components/main'
 import Projects from '../components/projects'
 import Sidebar from '../components/sidebar'
 import Skills from '../components/skills'
-import ContactMe from '../components/skills/contactme'
+import ContactMe from '../components/contactme'
 
 const Home: NextPage = () => {
   return (

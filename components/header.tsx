@@ -3,6 +3,7 @@ import {FaTimes, FaBars} from 'react-icons/fa'
 import {motion,useCycle} from 'framer-motion'
 import {useDimensions} from './use-dimension'
 import Sidebar from './sidebar'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -19,7 +20,7 @@ export default function Header({}: Props) {
 
     const links = [
         {
-            id: 1,
+            id: '#about',
             link: '// about'
         },
         {
@@ -45,7 +46,12 @@ export default function Header({}: Props) {
           animate={{x: 0, opacity: 1, scale: 1}}
           transition={{duration: 1.5}}>
 
-        <img src="./assets/pixelatedLogo.png" alt="myLogo"className="w-16 cursor-pointer"/>
+        <Link href='#main'>
+          <button>
+          <img src="./assets/pixelatedLogo.png" alt="myLogo"className="w-16 cursor-pointer"/>
+          </button>
+        </Link>
+
 
         </motion.div>
 
@@ -54,13 +60,30 @@ export default function Header({}: Props) {
         <motion.div 
           initial={{x: 500, opacity: 0, scale: 0.5}}
           animate={{x: 0, opacity: 1, scale: 1}}
-          transition={{duration: 1.5,}}>
-          <ul className="hidden md:flex">
+          transition={{duration: 1.5,}}
+          className='hidden md:flex'>
+            <Link href='#main'>
+              <button className='hidden'>main</button>
+            </Link>
+            <Link href='#about'>
+            <button className='headerbtn'>// about</button>
+            </Link>
+            <Link href='#skills'>
+            <button className='headerbtn'>// skills</button>
+            </Link>
+            <Link href='#projects'>
+            <button className='headerbtn'>// projects</button>
+            </Link>
+            <Link href='#contactme'>
+            <button className='headerbtn'>// contact me</button>
+            </Link>
+            
+          {/* <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
               <li key={id} className="flex px-4 font-light cursor-pointer text-paper hover:text-primary hover:duration-500">
                 {link}
               </li>))}
-          </ul>
+          </ul> */}
           
           </motion.div>
        
