@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { link } from "fs";
+import Link from "next/link";
 import MenuItem from "./navitems";
 
 const navigationVariants = {
@@ -13,26 +13,31 @@ const navigationVariants = {
 const links = [
   {
       id: 1,
-      link: '// about'
+      link: '// about',
+      path: '#about'
   },
   {
       id: 2,
-      link: '// skills'
+      link: '// skills',
+      path: '#skills'
   },
   {
       id: 3,
-      link: '// projects'
+      link: '// projects',
+      path: '#projects'
   },
   {
-    id: 4,
-      link: '// contact me'
+      id: 4,
+      link: '// contact me',
+      path: '#contactme'
   }
 ]
 const Navigation = () => {
+
   return (
     <motion.ul className="absolute top-0 right-10" variants={navigationVariants}>
       {links.map(i => (
-      <MenuItem i={i} key={i.id} />
+      <MenuItem i={i} key={i.id}/>
     ))}
     </motion.ul>
   );
