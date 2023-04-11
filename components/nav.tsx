@@ -37,7 +37,9 @@ const Navigation = () => {
   return (
     <motion.ul className="absolute top-0 right-10" variants={navigationVariants}>
       {links.map(i => (
-      <MenuItem i={i} key={i.id}/>
+      <MenuItem i={i} key={i.id} children={undefined} onClick={function (): void {
+          throw new Error("Function not implemented.");
+        } }/>
     ))}
     </motion.ul>
   );

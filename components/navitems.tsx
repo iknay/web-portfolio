@@ -31,14 +31,13 @@ const menuItemVariants: Variants = {
     },
   },
 };
-// const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+
 const MenuItem = ({i, children, onClick }: MenuItemProps) => {
   const style = { border: `2px solid ${[i.id]}` };
   return (
     <motion.div layout>
     <motion.li className="mt-1 cursor-pointer text-md text-secondary" variants={menuItemVariants} onClick={onClick}>
-      {/* <span style={style} className="rounded w-45 h-45 full"></span>
-      <span style={style} className="flex-1 mb-5 rounded-lg"> */}\
+
         <a href={i.path}>{i.link}</a>
       {children}
         {/* <text>{i.link}</text> */}
