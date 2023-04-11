@@ -20,8 +20,7 @@ export default function Main({ }: Props) {
       <div className='flex flex-col items-center justify-center w-full h-screen md:flex-row'>
         <div className='flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-3xl font-bold text-center sm:text-7xl md:flex-row'>
-            {/* <h1 className='text-secondary'>hello, i'm</h1>
-            <h2 className='flex items-center justify-center md:ml-6 text-primary'>yancee</h2> */}
+            
             <h1>
               <span className='text-paper'>{text}</span>
               <Cursor cursorColor='#F08080' />

@@ -6,7 +6,6 @@ interface MenuItemProps {
     link: string;
     path?: string;
   };
-  children: React.ReactNode;
   onClick: () => void;
 }
 
@@ -32,14 +31,13 @@ const menuItemVariants: Variants = {
   },
 };
 
-const MenuItem = ({i, children, onClick }: MenuItemProps) => {
+const MenuItem = ({i, onClick }: MenuItemProps) => {
   const style = { border: `2px solid ${[i.id]}` };
   return (
     <motion.div layout>
     <motion.li className="mt-1 cursor-pointer text-md text-secondary" variants={menuItemVariants} onClick={onClick}>
 
         <a href={i.path}>{i.link}</a>
-      {children}
         {/* <text>{i.link}</text> */}
       {/* </span> */}
     </motion.li>

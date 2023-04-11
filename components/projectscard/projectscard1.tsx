@@ -24,7 +24,7 @@ function ProjectsCard1({}: Props) {
       <div className='px-0 space-y-4 md:px-10 text-[10px] xl:text-[14px]'>
         <h4 className='tracking-[5px] font-semibold'>ELECTIVE PROJECT</h4>
         <p>Lekto is a Speech Emotion Recognition application that utilizes machine learning to translate non-Tagalog dialects into Tagalog. 
-            It also has the added capability of identifying the speaker's emotions, making communication more effective and efficient.</p>
+            It also has the added capability of identifying the speaker&apos;s emotions, making communication more effective and efficient.</p>
         <p>Contact me for more information</p>
       </div>
     </article>
