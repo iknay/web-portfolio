@@ -3,6 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import Background from './background'
+import { useRef } from 'react'
 
 type Props = {}
 
@@ -29,7 +30,7 @@ export default function Main({ }: Props) {
           <p className='py-3 text-paper'>welcome to my portfolio</p>
           <div className='py-3'>
           <a href='https://drive.google.com/file/d/1mBsL6lrEPjeKU4UR6526GJ330UIJH2og/view?usp=sharing' 
-              target = "_blank">
+              target = "_blank" rel='noreferrer noopener'>
             <motion.button
               whileHover={{
                 scale: 1.2,
@@ -38,10 +39,10 @@ export default function Main({ }: Props) {
               className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button></a>
           </div>
           <div>
-            <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" />
-            <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#F08080' target="_blank" />
-            <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" />
-            <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" />
+            <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
           </div>
           <div className='absolute overflow-hidden opacity-25 pointer-events-none xl:w-full xl:h-screen '>
             <Background/>

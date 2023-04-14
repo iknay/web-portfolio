@@ -29,7 +29,7 @@ function ProjectsCard({}: Props) {
            functions and features of the web application. I mostly
            worked on the admin page of the company and a bit of
            backend using php and mysql.</p>
-        <p>Check out <a className='tracking-wide underline hover:text-[#F08080]' href='https://www.ilovetaters.com' target="_blank">ilovetaters.com</a></p>
+        <p>Check out <a className='tracking-wide underline hover:text-[#F08080]' href='https://www.ilovetaters.com' target="_blank" rel='noreferrer noopener'>ilovetaters.com</a></p>
       </div>
     </article>
   )
