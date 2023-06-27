@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import Background from './background'
-import { useRef } from 'react'
+import Pointer from './followpointer'
 
 type Props = {}
 
@@ -16,12 +16,10 @@ export default function Main({ }: Props) {
   })
 
   return (
-    <div
-      className='flex items-center justify-center w-full h-screen'>
+    <div className='flex items-center justify-center w-full h-screen'>
       <div className='flex flex-col items-center justify-center w-full h-screen md:flex-row'>
         <div className='flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-3xl font-bold text-center sm:text-7xl md:flex-row'>
-            
             <h1>
               <span className='text-paper'>{text}</span>
               <Cursor cursorColor='#F08080' />
@@ -44,9 +42,12 @@ export default function Main({ }: Props) {
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
           </div>
-          <div className='absolute overflow-hidden opacity-25 pointer-events-none xl:w-full xl:h-screen '>
+          <div className='absolute h-full overflow-hidden opacity-25 pointer-events-none xl:w-full xl:h-screen '>
+            <Background/>
+            <Background/>
             <Background/>
           </div>
+          <Pointer/>
         </div>
       </div>
     </div>

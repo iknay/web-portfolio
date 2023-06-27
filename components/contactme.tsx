@@ -121,7 +121,7 @@ function ContactMe() {
                 value="Send"
                 className="w-full py-2 my-3 text-paper rounded-xl border-[#F08080] border tracking-widest hover:bg-gray-500/40 hover:duration-500"
               >
-                Submit
+                Send
               </button>
       <Snackbar open={open} autoHideDuration={3000} onClose={handleClose} TransitionComponent={transition} key={transition ? transition.name : ''}>
         <Alert onClose={handleClose} sx={{ width: '100%', background: '#F08080' }}>
