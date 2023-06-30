@@ -65,7 +65,7 @@ class ImageArea extends Component {
       <div className="image-container">
         <img
           className="card-image"
-          src="https://media.discordapp.net/attachments/1091002910588018748/1124192738326351913/lekto.png?width=1117&height=570"
+          src="https://media.discordapp.net/attachments/1091002910588018748/1124227344341671936/lekto.png?width=1282&height=670"
           alt="taters"
         />
       </div>

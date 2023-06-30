@@ -5,7 +5,7 @@ interface BlogCardState {
   flipped: boolean;
 }
 
-class ProjectsCard1 extends Component<{}, BlogCardState> {
+class ProjectsCard3 extends Component<{}, BlogCardState> {
   constructor(props: {}) {
     super(props);
     this.state = { flipped: false };
@@ -71,8 +71,8 @@ class ImageArea extends Component {
       <div className="image-container">
         <img
           className="card-image"
-          src="https://media.discordapp.net/attachments/1091002910588018748/1124227344614314065/taters.png?width=1282&height=670"
-          alt="taters"
+          src="https://media.discordapp.net/attachments/1091002910588018748/1124225567571595425/clinic.png?width=1282&height=650"
+          alt="clinic"
         />
       </div>
     );
@@ -84,9 +84,8 @@ class MainArea extends Component {
     return (
       <div className="main-area text-tertiary">
         <div className="blog-post">
-          <h1 className='text-[24px] font-bold'>Taters Enterprises Inc.</h1>
-          <p className=''>Web Developer Intern</p>
-          <p className="text-[12px] mt-10 read-more">Hover to see more</p>
+          <h1 className='text-[24px] font-bold'>Firststep Multispecialty Clinic</h1>
+          <p className="text-[12px] mt-8 read-more">Hover to see more</p>
         </div>
       </div>
     );
@@ -94,4 +93,4 @@ class MainArea extends Component {
 }
 
 
-export default ProjectsCard1;
+export default ProjectsCard3;
