@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F08080]/80 scroll-smooth'>
       <Head>
         <title>Yancee</title>
-        <link rel="icon" href="./assets/pixelLogo.png" />
+        <link rel="icon" href='./assets/pixelLogo2.png' />
       </Head>
       
       <Header/>
