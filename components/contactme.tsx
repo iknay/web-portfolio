@@ -70,7 +70,7 @@ function ContactMe() {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
-    className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden md:flex-row text-paper '>
+    className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden text-paper '>
       <h3 className='absolute top-24 tracking-[15px] text-2xl'>get in touch</h3>
       <form onSubmit={sendEmail}>
       <div className='pt-4 space-y-4'>
@@ -127,10 +127,11 @@ function ContactMe() {
         <Alert onClose={handleClose} sx={{ width: '100%', background: '#F08080' }}>
           Message Sent!
         </Alert>
-      </Snackbar>
-              
-    
+      </Snackbar>        
       </form>
+      <div className='mt-6 tracking-wider text-center text-paper'>
+        <p>or you can message me through my email <span className=' text-primary'>yanceevillanueva16@gmail.com</span></p>
+      </div>
     </motion.div>
   )
 }

@@ -27,3 +27,120 @@
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 0px transparent inset;
+  box-shadow: 0 0 0px 0px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: white;
+}
+
+.card-container {
+  height: 350px;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+  width: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  box-sizing: border-box;
+}
+
+.card-container.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.card-container .front,
+.card-container .back {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: #EFEEEE;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: -webkit-transform ease 500ms;
+  transition: transform ease 500ms;
+}
+
+.card-container .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  /* front tile styles go here! */
+}
+
+.card-container .back {
+  background: #EFEEEE;
+  transform: rotateY(-180deg);
+  padding: 20px;
+  font-size: 20px;
+  color: #333333;
+  /* back tile styles go here! */
+}
+
+.card-container .image-container {
+  position: relative;
+}
+
+.card-container .image-container .card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-container .image-container .title {
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  bottom: 0;
+  left: 0;
+  color: #333333;
+}
+
+.card-container .main-area {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.card-container .main-area .blog-post {
+  height: 100%;
+}
+
+
+.card-container .main-area .blog-post .read-more {
+  position: relative;
+  bottom: 0px;
+  text-align: right;
+}
+
+.card-container .main-area .blog-post .blog-content {
+  height: 90%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
