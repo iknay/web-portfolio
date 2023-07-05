@@ -52,14 +52,13 @@ class Back extends Component {
   render() {
     return (
       <div className="back">
-        <p className='text-justify'>I handled front-end web development activities
-           using react.js and tailwind css and QA activities for
-           functions and features of the web application. I mostly
-           worked on the admin page of the company and a bit of
-           backend using php and mysql.</p>
-        <p className='mt-4'>Check out {""}
-          <a className='tracking-wide underline hover:text-[#F08080]' href='https://www.ilovetaters.com' target="_blank" rel='noreferrer noopener'>
-             ilovetaters.com</a></p>
+        <p className='text-justify'>The website of FirstStep Multispecialty Clinic provides an attractive and easy-to-use online platform.
+         I have designed the website with a modern look, responsive layouts, and user-friendly navigation. 
+         The goal was to create an engaging website that reflects the professionalism of the clinic and allows users
+          to easily access their services.</p>
+        <p className='mt-4'>Live demo {""}
+          <a className='tracking-wide underline hover:text-[#F08080]' href='https://firststepmultispecialtyclinic.vercel.app/' target="_blank" rel='noreferrer noopener'>
+             firststepmultispecialtyclinic</a></p>
       </div>
     );
   }
@@ -82,10 +81,11 @@ class ImageArea extends Component {
 class MainArea extends Component {
   render() {
     return (
-      <div className="main-area text-tertiary">
+      <div className="main-area text-secondary">
         <div className="blog-post">
-          <h1 className='text-[24px] font-bold'>Firststep Multispecialty Clinic</h1>
-          <p className="text-[12px] mt-8 read-more">Hover to see more</p>
+          <h1 className='md:text-[24px] text-[16px] font-bold tracking-wider text-accent'>Firststep Multispecialty Clinic</h1>
+          <p className="text-[12px] mt-8 read-more md:flex hidden">Hover to see more</p>
+          <p className="md:hidden read-more">Touch to see more</p>
         </div>
       </div>
     );

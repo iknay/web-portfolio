@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +9,8 @@
 @layer base {
     html {
         /* font-family: 'Nunito', sans-serif; */
-        font-family: 'DotGothic16', sans-serif;
+        /* font-family: 'DotGothic16', sans-serif; */
+        font-family: 'Poppins', sans-serif;
     }
 }
 
@@ -23,7 +25,7 @@
 
 @layer components {
     .headerbtn{
-        @apply flex px-4 font-light cursor-pointer text-paper hover:text-primary hover:duration-500
+        @apply flex px-4 cursor-pointer text-accent hover:text-paper font-medium tracking-wider hover:duration-500
     }
 }
 
@@ -42,6 +44,11 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
   color: white;
 }
+
+.bg-linear{
+  background: linear-gradient(180deg, #F1CCBF 0%, #D2A0A1 34.17%, #B17982 72.71%, #A76D79 100%);
+}
+
 
 .card-container {
   height: 350px;
@@ -68,7 +75,8 @@ select:-webkit-autofill:focus {
   height: 100%;
   width: 100%;
   display: block;
-  background: #EFEEEE;
+  background-color: #F1CCBF;
+  backdrop-filter: blur(5px);
   padding: 10px;
   position: absolute;
   border-radius: 10px;
@@ -85,10 +93,9 @@ select:-webkit-autofill:focus {
 }
 
 .card-container .back {
-  background: #EFEEEE;
   transform: rotateY(-180deg);
   padding: 20px;
-  font-size: 20px;
+  font-size: 16px;
   color: #333333;
   /* back tile styles go here! */
 }
@@ -106,6 +113,7 @@ select:-webkit-autofill:focus {
   position: absolute;
   margin-bottom: 10px;
   margin-left: 10px;
+  font-size: 16px;
   bottom: 0;
   left: 0;
   color: #333333;
@@ -143,4 +151,26 @@ footer {
   bottom: 0;
   right: 0;
   margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    width: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+
+  .card-container .back {
+    font-size: 12px;
+  }
+
+  .card-container .main-area .blog-post .read-more {
+    margin-top: 4px;
+  }
 }

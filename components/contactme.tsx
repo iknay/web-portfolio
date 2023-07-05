@@ -71,7 +71,7 @@ function ContactMe() {
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
     className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden text-paper '>
-      <h3 className='absolute top-24 tracking-[15px] text-2xl'>get in touch</h3>
+      <h3 className='tracking-[10px] md:text-6xl text-xl font-semibold pb-8'>get in touch</h3>
       <form onSubmit={sendEmail}>
       <div className='pt-4 space-y-4'>
       <MaterialInput
@@ -119,7 +119,7 @@ function ContactMe() {
                 onClick={handleClick(TransitionLeft)}
                 type="submit"
                 value="Send"
-                className="w-full py-2 my-3 text-paper rounded-xl border-[#F08080] border tracking-widest hover:bg-gray-500/40 hover:duration-500"
+                className="w-full py-2 my-3 tracking-widest border-2 text-paper rounded-xl border-accent2 hover:bg-accent2 hover:bg-opacity-25 hover:duration-500"
               >
                 Send
               </button>
@@ -130,7 +130,7 @@ function ContactMe() {
       </Snackbar>        
       </form>
       <div className='mt-6 tracking-wider text-center text-paper'>
-        <p>or you can message me through my email <span className=' text-primary'>yanceevillanueva16@gmail.com</span></p>
+        <p>or you can message me through my email <span className=' text-[#F1CCBF]'>yanceevillanueva16@gmail.com</span></p>
       </div>
     </motion.div>
   )

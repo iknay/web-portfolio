@@ -53,7 +53,7 @@ class Back extends Component {
     return (
       <div className="back">
         <p className='text-justify'>Lekto is a Speech Recognition application that utilizes machine learning to translate non-Tagalog dialects into Tagalog using React Native and Python + flask.</p>
-        <p className='text-[16px] text-primary mt-4'>Contact me if you want to know more about the project</p>
+        <p className='mt-4 text-primary'>Contact me if you want to know more about the project</p>
       </div>
     );
   }
@@ -76,11 +76,12 @@ class ImageArea extends Component {
 class MainArea extends Component {
   render() {
     return (
-      <div className="main-area text-tertiary">
+      <div className="main-area text-secondary">
         <div className="blog-post">
-          <h1 className='text-[24px] font-bold'>Lekto</h1>
-          <p className=''>Elective Project</p>
-          <p className="text-[12px] mt-10 read-more">Hover to see more</p>
+          <h1 className='md:text-[24px] text-[16px] font-bold text-accent tracking-wider'>Lekto</h1>
+          <p>Elective Project</p>
+          <p className="text-[12px] mt-8 read-more md:flex hidden">Hover to see more</p>
+          <p className="md:hidden read-more">Touch to see more</p>
         </div>
       </div>
     );

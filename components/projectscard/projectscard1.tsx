@@ -82,11 +82,12 @@ class ImageArea extends Component {
 class MainArea extends Component {
   render() {
     return (
-      <div className="main-area text-tertiary">
+      <div className="main-area text-secondary">
         <div className="blog-post">
-          <h1 className='text-[24px] font-bold'>Taters Enterprises Inc.</h1>
+          <h1 className='md:text-[24px] text-[16px] font-bold text-accent tracking-wider'>Taters Enterprises Inc.</h1>
           <p className=''>Web Developer Intern</p>
-          <p className="text-[12px] mt-10 read-more">Hover to see more</p>
+          <p className="text-[12px] mt-8 read-more md:flex hidden">Hover to see more</p>
+          <p className="md:hidden read-more">Touch to see more</p>
         </div>
       </div>
     );

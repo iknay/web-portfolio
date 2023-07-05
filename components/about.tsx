@@ -5,8 +5,8 @@ type Props = {}
 
 export default function About({}: Props) {
   return (
-    <div className='relative flex flex-col items-center h-screen px-10 mx-auto text-center justify-evenly md:flex-row text-paper'>
-      <h3 className='absolute md:top-24 top-0 tracking-[15px] text-2xl'>about</h3>
+    <div className='relative flex flex-col items-center h-screen px-10 mx-auto space-x-4 text-center justify-evenly md:flex-row text-paper'>
+      <h3 className='absolute md:top-24 top-0 tracking-[10px] md:text-6xl text-4xl font-semibold'>about</h3>
 
       <motion.img 
       initial={{

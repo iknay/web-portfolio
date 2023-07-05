@@ -22,7 +22,7 @@ export default function Main({ }: Props) {
           <div className='flex flex-col justify-center text-3xl font-bold text-center sm:text-7xl md:flex-row'>
             <h1>
               <span className='text-paper'>{text}</span>
-              <Cursor cursorColor='#F08080' />
+              <Cursor cursorColor='#A16F70' />
             </h1>
           </div>
           <p className='py-3 text-paper'>welcome to my portfolio</p>
@@ -34,15 +34,15 @@ export default function Main({ }: Props) {
                 scale: 1.2,
                 transition: { duration: .3 },
               }}
-              className='px-6 py-1 border-2 border-primary text-primary'>resume</motion.button></a>
+              className='px-6 py-1 border-2 rounded-md border-paper text-paper'>resume</motion.button></a>
           </div>
           <div>
-            <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
-            <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
-            <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
-            <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#F08080' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
+            <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
           </div>
-          <div className='absolute h-full overflow-hidden opacity-25 pointer-events-none xl:w-full xl:h-screen '>
+          <div className='absolute h-full overflow-hidden opacity-50 pointer-events-none xl:w-full xl:h-screen '>
             <Background/>
             <Background/>
             <Background/>

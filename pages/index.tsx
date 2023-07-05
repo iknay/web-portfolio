@@ -13,8 +13,8 @@ const Home: NextPage = () => {
 
   return (
 
-    <div className='z-0 h-screen overflow-x-hidden overflow-y-scroll bg-secondary snap-y snap-mandatory
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F08080]/80 scroll-smooth'>
+    <div className='z-0 h-screen overflow-x-hidden overflow-y-scroll bg-gradient-primary snap-y snap-mandatory
+    scrollbar scrollbar-track-white-400/20 scrollbar-thumb-[#F08080]/80 scroll-smooth'>
       <Head>
         <title>Yancee</title>
         <link rel="icon" href='./assets/pixelLogo2.png' />

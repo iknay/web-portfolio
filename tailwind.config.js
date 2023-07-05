@@ -8,11 +8,15 @@ module.exports = {
     extend: {
       colors: {
         primary: '#F08080',
-        secondary: "#1E1E1E",
+        secondary: "#333333",
         paper: "#EFEEEE",
-        tertiary: '#333333',
-
-      }
+        accent: '#A16F70',
+        accent2: "#F1CCBF"
+      },
+      backgroundImage: (theme) => ({
+        'gradient-primary': `linear-gradient(180deg, #F1CCBF 0%, #D2A0A1 34.17%, #B17982 72.71%, #A76D79 100%);
+        `,
+      }),
     },
   },
   plugins: [
