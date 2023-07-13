@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.16",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",

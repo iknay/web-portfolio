@@ -17,8 +17,8 @@ export default function Main({ }: Props) {
 
   return (
     <div className='flex items-center justify-center w-full h-screen'>
-      <div className='flex flex-col items-center justify-center w-full h-screen md:flex-row'>
-        <div className='flex flex-col items-center justify-center w-full h-screen max-w-screen-lg mx-auto'>
+      <div className='flex flex-col items-center justify-center w-full md:flex-row'>
+        <div className='flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto'>
           <div className='flex flex-col justify-center text-3xl font-bold text-center sm:text-7xl md:flex-row'>
             <h1>
               <span className='text-paper'>{text}</span>
@@ -27,7 +27,7 @@ export default function Main({ }: Props) {
           </div>
           <p className='py-3 text-paper'>welcome to my portfolio</p>
           <div className='py-3'>
-          <a href='https://drive.google.com/file/d/1mBsL6lrEPjeKU4UR6526GJ330UIJH2og/view?usp=sharing' 
+          <a href='https://drive.google.com/file/d/1v8DqnxB-GC6WhlcLZ1qWnpEDF5gQLfYu/view?usp=sharing' 
               target = "_blank" rel='noreferrer noopener'>
             <motion.button
               whileHover={{

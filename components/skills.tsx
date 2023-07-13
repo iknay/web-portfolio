@@ -13,9 +13,9 @@ type Props = {}
 
 export default function Skills({}: Props) {
   return (
-    <motion.div className='relative pb-4 flex flex-col items-center justify-center min-h-screen px-10 mx-auto text-center xl:px-10 max-w-[2000px] space-y-10 text-paper'>
-        <h3 className='tracking-[10px] md:text-6xl text-2xl font-semibold'> skills </h3>
-        <div className='grid gap-4 grid-rows xl:grid-cols-4 md:mt-0'>
+    <motion.div className='relative pb-4 flex flex-col items-center justify-center min-h-screen px-10 mx-auto text-center xl:px-10 max-w-[2000px] space-y-16 text-paper'>
+        <h3 className='tracking-[10px] md:text-6xl text-2xl font-semibold '> skills </h3>
+        <div className='grid gap-4 grid-rows xl:grid-cols-4'>
             <HtmlSkill/>
             <CssSkill/>
             <Typescript/>
