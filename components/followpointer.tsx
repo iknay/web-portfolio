@@ -9,7 +9,7 @@ export default function Pointer() {
   return (
     <motion.div
       ref={ref}
-      className="relative w-24 h-24 pointer-events-none opacity-80"
+      className="w-24 h-24 pointer-events-none opacity-80 matcha"
       animate={{ x, y }}
       transition={{
         type: "spring",

@@ -165,6 +165,9 @@ footer {
     box-sizing: border-box;
     font-size: 12px;
   }
+  .matcha {
+      display: none;
+  }
 
   .card-container .back {
     font-size: 12px;

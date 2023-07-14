@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
 
     <div className='z-0 h-screen overflow-x-hidden overflow-y-scroll bg-gradient-primary snap-y snap-mandatory
-    scrollbar scrollbar-track-white-400/20 scrollbar-thumb-[#F08080]/80 scroll-smooth'>
+    scrollbar scrollbar-track-white-400/20 scrollbar-thumb-[#F08080]/80'>
       <Head>
         <title>Yancee</title>
         <link rel="icon" href='./assets/pixelLogo2.png' />
@@ -22,26 +22,26 @@ const Home: NextPage = () => {
       
       <Header/>
       
-      <section id='main'>
+      <section id='main' className='snap-start'>
         <Main/>
       </section>
 
-      <section id='about'>
+      <section id='about' className='snap-center'>
       <About/>
       </section>
 
       {/* <Skills/> */}
-      <section id='skills'>
+      <section id='skills' className='snap-center'>
         <Skills/>
       </section>
 
       {/* <Projects/> */}
-      <section id='projects'>
+      <section id='projects' className='snap-center'>
         <Projects/>
       </section>
 
       {/* <ContactMe/> */}
-      <section id='contactme'>
+      <section id='contactme' className='snap-end'>
         <ContactMe/>
       </section>
 
