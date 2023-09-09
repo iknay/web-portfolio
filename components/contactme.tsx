@@ -77,10 +77,10 @@ function ContactMe() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden text-primary'
+      className='relative flex flex-col items-center justify-center h-screen max-w-full overflow-hidden text-primary'
     >
-      <div className='border-2 border-solid rounded-[80px] border-primary pl-20 pr-20 pt-10 pb-10'>
-      <h1 className='pb-8 text-xl font-normal text-center md:text-xl'>Drop me a message</h1>
+      <div className='border-2 border-solid rounded-[80px] border-primary lg:pl-20 lg:pr-20 pl-5 pr-5 pt-10 pb-10'>
+      <h1 className='pb-8 font-normal text-center text-md lg:text-xl'>Drop me a message</h1>
       <form onSubmit={sendEmail}>
         <div className='pt-4 space-y-4'>
           <MaterialInput
@@ -128,7 +128,7 @@ function ContactMe() {
           <button
             type="submit"
             value="Send"
-            className="py-2 my-3 text-xl tracking-widest border-2 rounded-full w-52 text-primary border-primary button"
+            className="py-2 mt-3 tracking-widest border-2 rounded-full text-md lg:text-xl w-52 text-primary border-primary button"
           >
             Send
           </button>

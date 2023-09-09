@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -8,12 +9,15 @@ export default function About({}: Props) {
   return (
     <div className='lg:flex h-[90%] pt-20 text-primary'>
 
-      <div className='flex-col items-start justify-start -mt-24 space-y-6 md:mt-0'>
+      <div className='flex-col items-start justify-start -mt-16 space-y-6 md:mt-0'>
         <p className='leading-tight text-md lg:text-xl'>I&apos;m passionate for creating engaging and intuitive web applications.
            I create responsive and scalable web experiences, ensuring seamless user interactions from concept to completion.</p>
-        <button className='button flex px-8 py-1 border-2 rounded-full border-primary text-[40px] text-primary'>Say Hello
-        <Image src="/assets/hi.png" alt="hand wave" width={50} height={50}/>
-        </button>
+        <Link href="#contactme">
+          <button id='#contactme' className='button flex px-8 py-1 border-2 rounded-full border-primary text-[40px] text-primary'>Say Hello
+          <Image src="/assets/hi.png" alt="hand wave" width={50} height={50}/>
+          </button>
+        </Link>
+       
       </div>
 
       <div>
