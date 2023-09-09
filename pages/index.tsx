@@ -6,6 +6,7 @@ import Projects from '../components/projects'
 import Skills from '../components/skills'
 import ContactMe from '../components/contactme'
 import Sticky from '../components/sticky'
+import Footer from '../components/footer'
 
 
 const Home: NextPage = () => {
@@ -43,6 +44,8 @@ const Home: NextPage = () => {
           <section id='contactme'>
             <ContactMe/>
           </section>
+
+          <Footer/>
       </div>
     </div>
    

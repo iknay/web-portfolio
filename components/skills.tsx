@@ -33,7 +33,7 @@ export default function Skills({}: Props) {
       </div>
     </div>
     <motion.div className='flex items-center justify-center pt-16'>
-        <div className='items-center justify-center gap-10 space-y-3 lg:flex'>
+        <div className='grid items-center justify-center grid-cols-2 gap-10 space-y-3 lg:flex'>
             <HtmlSkill/>
             <CssSkill/>
             <Typescript/>

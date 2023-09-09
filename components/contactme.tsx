@@ -148,9 +148,7 @@ function ContactMe() {
           Message Sent!
         </Alert>
       </Snackbar>
-      {/* <div className='mt-6 tracking-wider text-center text-paper'>
-        <p>or you can message me through my email <span className=' text-[#F1CCBF]'>yanceevillanueva16@gmail.com</span></p>
-      </div> */}
+
     </motion.div>
   );
 }

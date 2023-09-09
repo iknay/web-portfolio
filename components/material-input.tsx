@@ -15,7 +15,7 @@ export const MaterialInput = styled(
     shouldForwardProp: (prop) => prop !== "colorTheme",
   }
 )(({ colorTheme, theme }) => ({
-  ...(colorTheme === "black" && {
+  ...(colorTheme === "white" && {
     "& input": {
       color: "#333333 !important",
       "-webkit-text-fill-color": "#333333 !important",
@@ -24,46 +24,22 @@ export const MaterialInput = styled(
       color: "#333333!important",
     },
     "& fieldset": {
-      borderColor: "white !important",
+      borderColor: "#333333 !important",
     },
     "&:hover fieldset": {
-      borderColor: "white !important",
+      borderColor: "#333333 !important",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "white !important",
+      borderColor: "#333333 !important",
     },
     ".MuiSvgIcon-root ": {
-      fill: "white !important",
+      fill: "#333333 !important",
     },
     "& .MuiInputBase-input": {
-      color: "white !important",
-      "-webkit-text-fill-color": "white !important",
+      color: "#333333 !important",
+      "-webkit-text-fill-color": "#333333 !important",
     },
   }),
 
-  ...(colorTheme === "black" && {
-    "& input": {
-      color: "#22201A !important",
-      "-webkit-text-fill-color": "#22201A !important",
-    },
-    "& label": {
-      color: "#22201A !important",
-    },
-    "& fieldset": {
-      borderColor: "#22201A !important",
-    },
-    "&:hover fieldset": {
-      borderColor: "#22201A !important",
-    },
-    "&.Mui-focused fieldset": {
-      borderColor: "#22201A !important",
-    },
-    ".MuiSvgIcon-root ": {
-      fill: "#22201A !important",
-    },
-    "& .MuiInputBase-input": {
-      color: "#22201A !important",
-      "-webkit-text-fill-color": "#22201A !important",
-    },
-  }),
+
 }));
