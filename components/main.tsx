@@ -2,31 +2,38 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
-import Background from './background'
 import Pointer from './followpointer'
+import Header from './header'
 
 type Props = {}
 
 export default function Main({ }: Props) {
 
-  const [text, count] = useTypewriter({
-    words: ["hello, i'm yancee", "<i-love-matcha.tsx/>"],
-    delaySpeed: 2000,
-    loop: true
-  })
-
   return (
-    <div className='flex items-center justify-center w-full h-screen'>
-      <div className='flex flex-col items-center justify-center w-full md:flex-row'>
-        <div className='flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto'>
-          <div className='flex flex-col justify-center text-3xl font-bold text-center sm:text-7xl md:flex-row'>
-            <h1>
-              <span className='text-paper'>{text}</span>
-              <Cursor cursorColor='#A16F70' />
+    <div className='w-full h-screen'>
+      <Header/> 
+        <div className='lg:flex lg:items-end lg:justify-end lg:h-[90%] space-y-6 lg:space-y-0 lg:mt-0 mt-60'>
+        <h1 className='lg:text-[238px] text-5xl leading-none justify-end items-end'>Software Engineer</h1>
+        <div>
+          <p>Focused on Front-End Development</p>
+          <a href='https://drive.google.com/file/d/1v8DqnxB-GC6WhlcLZ1qWnpEDF5gQLfYu/view?usp=sharing' target = "_blank" rel='noreferrer noopener'>
+            <button className='button px-10 py-1 border-2 rounded-full border-primary text-[40px] text-primary mt-4 mb-10'>resume</button></a>
+        </div>
+      </div>
+     
+      <Pointer/>
+    </div>
+  )
+}
+
+{/* <div className='flex flex-col items-center justify-center w-full md:flex-row'> */}
+        // <div className='flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto'>
+          {/* <div className='flex flex-col justify-center text-3xl font-bold text-center md:text-[72px] md:flex-row'>
+            <h1 className='text-primary'>
+      
             </h1>
-          </div>
-          <p className='py-3 text-paper'>welcome to my portfolio</p>
-          <div className='py-3'>
+          </div> */}
+          {/* <div className='py-3'>
           <a href='https://drive.google.com/file/d/1v8DqnxB-GC6WhlcLZ1qWnpEDF5gQLfYu/view?usp=sharing' 
               target = "_blank" rel='noreferrer noopener'>
             <motion.button
@@ -34,22 +41,14 @@ export default function Main({ }: Props) {
                 scale: 1.2,
                 transition: { duration: .3 },
               }}
-              className='px-6 py-1 border-2 rounded-md border-paper text-paper'>resume</motion.button></a>
-          </div>
-          <div>
+              className='px-6 py-1 border-2 rounded-full border-primary text-[40px] text-primary'>resume</motion.button></a>
+          </div> */}
+          {/* <div>
             <SocialIcon url="https://instagram.com/eecnayy" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
             <SocialIcon url="https://linkedin.com/in/yancee" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
             <SocialIcon url="https://github.com/iknay" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
             <SocialIcon url="https://facebook.com/yanceevillanueva" bgColor='transparent' fgColor='#EFEEEE' target="_blank" rel='noreferrer noopener'/>
-          </div>
-          <div className='absolute h-full overflow-hidden opacity-50 pointer-events-none xl:w-full xl:h-screen '>
-            <Background/>
-            <Background/>
-            <Background/>
-          </div>
-          <Pointer/>
-        </div>
-      </div>
-    </div>
-  )
-}
+          </div> */}
+          
+      //   </div>
+      // </div>

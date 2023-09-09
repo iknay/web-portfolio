@@ -7,17 +7,37 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#F08080',
-        secondary: "#333333",
+        primary: '#333333',
+        secondary: "#F9A7B0",
         paper: "#EFEEEE",
-        accent: '#A16F70',
-        accent2: "#F1CCBF"
       },
-      backgroundImage: (theme) => ({
-        'gradient-primary': `linear-gradient(180deg, #F1CCBF 0%, #D2A0A1 34.17%, #B17982 72.71%, #A76D79 100%);
-        `,
-      }),
+      fontSize: {
+        '6xl': '96px',
+        '5xl': '80px',
+        '4xl': '72px',
+        '3xl': '64px',
+        '2xl': '56px',
+        'xl': '40px',
+        'lg': '32px',
+        'md': '24px',
+        'sm': '16px'
+      },
+      screens: {
+        'sm': '319px',
+        // => @media (min-width: 319px) { ... }
+  
+        'md': '481px',
+        // => @media (min-width: 481px) { ... }
+  
+        'lg': '1201px',
+        // => @media (min-width: 1201px) { ... }
+  
+        'xl': '1601px',
+        // => @media (min-width: 1601px) { ... }
+  
     },
+    },
+    
   },
   plugins: [
     require('tailwind-scrollbar')

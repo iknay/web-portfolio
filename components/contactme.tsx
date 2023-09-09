@@ -77,9 +77,10 @@ function ContactMe() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden text-paper'
+      className='relative flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto overflow-hidden text-primary'
     >
-      <h3 className='tracking-[10px] md:text-6xl text-xl font-semibold pb-8'>get in touch</h3>
+      <div className='border-2 border-solid rounded-[80px] border-primary pl-20 pr-20 pt-10 pb-10'>
+      <h1 className='pb-8 text-xl font-normal text-center md:text-xl'>Drop me a message</h1>
       <form onSubmit={sendEmail}>
         <div className='pt-4 space-y-4'>
           <MaterialInput
@@ -123,14 +124,19 @@ function ContactMe() {
             fullWidth
           />
         </div>
-        <button
-          type="submit"
-          value="Send"
-          className="w-full py-2 my-3 tracking-widest border-2 text-paper rounded-xl border-accent2 hover:bg-accent2 hover:bg-opacity-25 hover:duration-500"
-        >
-          Send
-        </button>
+        <div className='flex items-center justify-center'>
+          <button
+            type="submit"
+            value="Send"
+            className="py-2 my-3 text-xl tracking-widest border-2 rounded-full w-52 text-primary border-primary button"
+          >
+            Send
+          </button>
+        </div>
+        
       </form>
+      </div>
+      
       <Snackbar
         open={open}
         autoHideDuration={3000}
@@ -142,9 +148,9 @@ function ContactMe() {
           Message Sent!
         </Alert>
       </Snackbar>
-      <div className='mt-6 tracking-wider text-center text-paper'>
+      {/* <div className='mt-6 tracking-wider text-center text-paper'>
         <p>or you can message me through my email <span className=' text-[#F1CCBF]'>yanceevillanueva16@gmail.com</span></p>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

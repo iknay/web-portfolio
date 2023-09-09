@@ -6,11 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'pp-mori';
+  src: url(/fonts/PPMori-Regular.otf) format('regular');
+}
+
 @layer base {
     html {
-        /* font-family: 'Nunito', sans-serif; */
-        /* font-family: 'DotGothic16', sans-serif; */
-        font-family: 'Poppins', sans-serif;
+        font-family: 'pp mori', sans-serif;
     }
 }
 
@@ -25,8 +28,26 @@
 
 @layer components {
     .headerbtn{
-        @apply flex px-4 cursor-pointer text-accent hover:text-paper font-medium tracking-wider hover:duration-500
+        @apply flex mx-6 text-end cursor-pointer text-primary font-extralight tracking-wider
     }
+}
+
+.bg-gradient {
+  background: linear-gradient(300deg, #F9A7B0, #e6d0d3, #f1edee, #efdbe0, #FEC6CD);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 input:-webkit-autofill,
@@ -45,135 +66,72 @@ select:-webkit-autofill:focus {
   color: white;
 }
 
-.bg-linear{
-  background: linear-gradient(180deg, #F1CCBF 0%, #D2A0A1 34.17%, #B17982 72.71%, #A76D79 100%);
+.button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #333333;
+  color: #EFEEEE;
 }
 
-
-.card-container {
-  height: 350px;
-  margin: 0;
-  padding: 0;
-  top: 20px;
-  width: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  box-sizing: border-box;
-}
-
-.card-container.flipped .front {
-  transform: rotateY(180deg);
-}
-
-.card-container.flipped .back {
-  transform: rotateY(0deg);
-}
-
-.card-container .front,
-.card-container .back {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  display: block;
-  background-color: #F1CCBF;
-  backdrop-filter: blur(5px);
-  padding: 10px;
-  position: absolute;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: -webkit-transform ease 500ms;
-  transition: transform ease 500ms;
-}
-
-.card-container .front {
-  z-index: 2;
-  transform: rotateY(0deg);
-  /* front tile styles go here! */
-}
-
-.card-container .back {
-  transform: rotateY(-180deg);
-  padding: 20px;
-  font-size: 16px;
-  color: #333333;
-  /* back tile styles go here! */
-}
-
-.card-container .image-container {
+.hover-underline {
+  display: inline-block;
   position: relative;
 }
 
-.card-container .image-container .card-image {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.card-container .image-container .title {
+.hover-underline:after {
+  content: '';
   position: absolute;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-size: 16px;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
   bottom: 0;
   left: 0;
-  color: #333333;
+  background-color: 
+#333333;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-.card-container .main-area {
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
+.hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.card-container .main-area .blog-post {
-  height: 100%;
-}
-
-
-.card-container .main-area .blog-post .read-more {
-  position: relative;
-  bottom: 0px;
-  text-align: right;
-}
-
-.card-container .main-area .blog-post .blog-content {
-  height: 90%;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .card-container {
-    height: 250px;
-    margin: 0;
-    padding: 0;
-    top: 20px;
-    width: 300px;
-    position: relative;
-    transform-style: preserve-3d;
-    box-sizing: border-box;
-    font-size: 12px;
+@media (min-width: 319px) and (max-width: 480px) {
+  .margin {
+    margin: 0px 12px 0px 12px;
   }
-  .matcha {
-      display: none;
+  .header {
+    height: 150px;
   }
-
-  .card-container .back {
-    font-size: 12px;
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    margin-right: -40px;
   }
+}
 
-  .card-container .main-area .blog-post .read-more {
-    margin-top: 4px;
+@media (min-width: 481px) and (max-width: 1200px) {
+  .margin {
+    margin: 0px 24px 0px 24px;
+  }
+  .header {
+    height: 150px;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    margin-right: -40px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .margin {
+    margin: 0px 48px 0px 48px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .margin {
+    margin: 0px 48px 0px 48px;
   }
 }

@@ -1,14 +1,30 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import Image from 'next/image'
 
 type Props = {}
 
 export default function About({}: Props) {
   return (
-    <div className='relative flex flex-col items-center h-screen px-10 mx-auto text-center md:space-x-4 justify-evenly md:flex-row text-paper'>
-      <h3 className='absolute md:top-24 top-0 tracking-[10px] md:text-6xl text-2xl font-semibold'>about</h3>
+    <div className='lg:flex h-[90%] pt-20 text-primary'>
 
-      <motion.img 
+      <div className='flex-col items-start justify-start -mt-24 space-y-6 md:mt-0'>
+        <p className='leading-tight text-md lg:text-xl'>I&apos;m passionate for creating engaging and intuitive web applications.
+           I create responsive and scalable web experiences, ensuring seamless user interactions from concept to completion.</p>
+        <button className='button flex px-8 py-1 border-2 rounded-full border-primary text-[40px] text-primary'>Say Hello
+        <Image src="/assets/hi.png" alt="hand wave" width={50} height={50}/>
+        </button>
+      </div>
+
+      <div>
+        <Image src="/assets/myPic.png" alt="hand wave" width={1150} height={1500} />
+      </div>
+
+    </div>
+  )
+}
+
+{/* <motion.img 
       initial={{
         x: -200,
         opacity: 0,
@@ -23,13 +39,4 @@ export default function About({}: Props) {
       viewport={{ once: true }}
       className='flex-shrink-0 object-cover flex items-center justify-center md:mt-16
       h-48 w-48 rounded-full md:rounded-lg md:w-56 md:h-72 xl:w-[400px] xl:h-[500px] xl:mt-20 mt-0'
-      src="./assets/me.jpg"/>
-      <div className='flex text-justify md:text-[10px] xl:text-[16px] xl:p-28 text-sm -mt-6 leading-loose'>
-        <span><h3>Hi, I&apos;m an aspiring front-end developer and UI designer who has a passion for creating engaging and intuitive web applications.
-          With my technical expertise in front-end development languages like HTML, CSS, ReactJS, and TypeScript, as well as my back-end knowledge of programming languages such as Python and Node.js,
-          I am able to build seamless, responsive, and scalable web applications from start to finish.</h3>
-        </span>
-      </div>
-    </div>
-  )
-}
+      src="./assets/me.jpg"/> */}

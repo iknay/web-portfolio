@@ -15,13 +15,13 @@ export const MaterialInput = styled(
     shouldForwardProp: (prop) => prop !== "colorTheme",
   }
 )(({ colorTheme, theme }) => ({
-  ...(colorTheme === "white" && {
+  ...(colorTheme === "black" && {
     "& input": {
-      color: "white !important",
-      "-webkit-text-fill-color": "white !important",
+      color: "#333333 !important",
+      "-webkit-text-fill-color": "#333333 !important",
     },
     "& label": {
-      color: "white !important",
+      color: "#333333!important",
     },
     "& fieldset": {
       borderColor: "white !important",
