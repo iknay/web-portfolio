@@ -13,7 +13,7 @@ export default function Main({ }: Props) {
     <div className='w-full h-screen'>
       <Header/> 
         <div className='lg:flex lg:items-end lg:justify-end lg:h-[90%] space-y-6 lg:space-y-0 lg:mt-0 mt-60'>
-        <h1 className='lg:text-[238px] text-5xl leading-none justify-end items-end'>Software Engineer</h1>
+        <h1 className='xl:text-[238px] lg:text-[220px] text-5xl leading-none justify-end items-end'>Software Engineer</h1>
         <div>
           <p>Focused on Front-End Development</p>
           <a href='https://drive.google.com/file/d/1v8DqnxB-GC6WhlcLZ1qWnpEDF5gQLfYu/view?usp=sharing' target = "_blank" rel='noreferrer noopener'>
