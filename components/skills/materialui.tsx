@@ -17,8 +17,8 @@ export default function MaterialUI({directionBottom}: Props) {
         whileInView={{opacity: 1, y: 0}}
         whileHover={{scale: 1.2}}
         whileTap={{scale:1.1}}
-        src="https://www.frontendmag.com/wp-content/uploads/2023/01/material-ui-logo.png"
-        className='object-cover w-20 h-20 xl:w-28 xl:h-28 md:w-24 md:h-24'
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png"
+        className='object-cover md:h-[72px] md:w-28 sm:w-24 sm:h-16'
       />
     </div>
   )

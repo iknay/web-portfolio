@@ -15,7 +15,7 @@ export default function Skills({}: Props) {
   return (
    <motion.div className='min-h-screen pt-20 mb-32 lg:mb-0'>
     <h1 className='text-md lg:text-2xl'>The things I can do for you...</h1>
-    <div className='lg:space-x-16 md:flex'>
+    <div className='lg:space-x-16 lg:flex'>
       <div className='p-4 border-l-2 border-solid border-primary w-96'>
         <p className='text-2xl text-gray-400 mb-9'>01</p>
         <h1 className='text-lg font-medium'>User Experience</h1>
