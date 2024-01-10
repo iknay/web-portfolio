@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
+import Link from 'next/link';
 import {motion} from 'framer-motion';
-import {BsFillArrowUpRightCircleFill} from 'react-icons/bs'
+import {BsFillArrowUpRightCircleFill} from 'react-icons/bs';
 
 export default function Projects () {
+
   return(
     <motion.div 
     initial={{opacity:0}}
@@ -12,6 +14,20 @@ export default function Projects () {
       <h1 className='mb-8 text-lg font-normal md:text-xl'>My Work</h1>
 
       <div className='space-y-6'>
+
+        <div className='flex justify-between pb-16 border-b-2 border-solid imageHover1 border-primary'>
+          <div className='w-3/4'>
+            <h2 className='text-xl font-semibold lg:text-3xl'>Gamer Points Application</h2>
+            <p className='font-light'>I created responsive and intuitive front-end solutions for a gaming platform using React.js, TypeScript, JavaScript, and Tailwind CSS. 
+            Collaborated with UI/UX designers to implement design mockups seamlessly. Integrated innovative features like a notification system 
+            with an advertisement counter, a referral program with invite codes, and a filter system to boost user engagement. </p>
+          </div>
+          <div className='flex items-end justify-center mr-5'>
+              <Link href='/gamerpoints'>
+                <BsFillArrowUpRightCircleFill size={60} />
+              </Link>
+          </div>
+        </div>
         
         <div className='flex justify-between pb-16 border-b-2 border-solid imageHover1 border-primary'>
           <div className='w-3/4'>

@@ -7,6 +7,7 @@ import Skills from '../components/skills'
 import ContactMe from '../components/contactme'
 import Sticky from '../components/sticky'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
 
 const Home: NextPage = () => {
