@@ -14,9 +14,14 @@ import Image from 'next/image';
 export default function Carousel() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  const onAutoplayTimeLeft = (s: any, time: number, progress: number) => {
+    if (progressCircle.current) {
+      (progressCircle.current as HTMLElement).style.setProperty('--progress', String(1 - progress));
+    }
+  
+    if (progressContent.current) {
+      (progressContent.current as Node).textContent = `${Math.ceil(time / 1000)}s`;
+    }
   };
   return (
     <>
