@@ -5,6 +5,8 @@ import { MaterialInput } from './material-input';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import Slide, { SlideProps } from '@mui/material/Slide';
+import Link from 'next/link';
+import { IoArrowUpCircleSharp } from "react-icons/io5";
 
 type TransitionProps = Omit<SlideProps, 'direction'>;
 
@@ -136,6 +138,20 @@ function ContactMe() {
         
       </form>
       </div>
+
+      <div className="flex items-center justify-center">
+            <motion.button
+            animate={{ y: -20 }}
+            transition={{ 
+            ease: "linear", 
+            duration: 1, 
+            repeat: Infinity, 
+            type: "spring",
+            damping: 10,
+            repeatType: "reverse"
+            }}
+            className='pt-10'><Link href='#main'><IoArrowUpCircleSharp className="text-primary" size={60}/></Link></motion.button>
+            </div>
       
       <Snackbar
         open={open}

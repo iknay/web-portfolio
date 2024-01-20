@@ -21,7 +21,7 @@ export default function GamerPoints () {
             </div>
 
             <div className="items-center justify-center w-full h-full sm:p-8">
-                <video controls autoPlay width="550" className="mx-auto border-4 rounded-md border-paper ">
+                <video controls width="550" className="mx-auto border-4 rounded-md border-paper ">
                     <source src="/assets/gp_trailer.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

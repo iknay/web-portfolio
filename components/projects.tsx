@@ -74,6 +74,19 @@ export default function Projects () {
           <a href='https://iknay.github.io/LoveCalculator/' target="_blank" rel='noreferrer noopener'><BsFillArrowUpRightCircleFill size={60}/></a>
           </div>
         </div>
+
+        <div className='flex justify-between pb-16 border-b-2 border-solid imageHover4 border-primary'>
+          <div className='w-3/4 '>
+            <h2 className='text-xl font-semibold lg:text-3xl'>Graphic Design</h2>
+            <p className='font-light'>Discover my graphic design journey through a collection of diverse projects 
+            showcasing my expertise in creating visually compelling designs across various mediums and styles.</p>
+          </div>
+          <div className='flex items-end justify-center mr-5'>
+              <Link href='/graphicdesign'>
+                <BsFillArrowUpRightCircleFill size={60} />
+              </Link>
+          </div>
+        </div>
         
       </div>
           

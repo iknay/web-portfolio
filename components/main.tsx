@@ -15,7 +15,7 @@ export default function Main({ }: Props) {
         <div className='lg:flex lg:items-end lg:justify-end lg:h-[90%] space-y-6 lg:space-y-0 lg:mt-0 mt-60'>
         <h1 className='xl:text-[238px] lg:text-[220px] text-5xl leading-none justify-end items-end'>Front-End Developer</h1>
         <div>
-          <a href='https://drive.google.com/file/d/1resa4vh6L28sXNFBky0TLVY9aW4cS6LG/view?usp=sharing' target = "_blank" rel='noreferrer noopener'>
+          <a href='https://drive.google.com/file/d/16xgIEU1lybUNrBSlf4zOnozazk9VY9e8/view?usp=sharing' target = "_blank" rel='noreferrer noopener'>
             <button className='button px-10 py-1 border-2 rounded-full border-primary text-[40px] text-primary mt-4 mb-10'>resume</button></a>
         </div>
       </div>
