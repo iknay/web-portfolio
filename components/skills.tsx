@@ -49,7 +49,7 @@ const skillsData: SkillData[] = [
   },
   {
     icon: tailwind_icon,
-    title: "Tailwind CSS"
+    title: "Tailwind"
   },
   {
     icon: git_icon,
@@ -105,7 +105,7 @@ export default function Skills({directionBottom}: Props) {
     }}
     transition={{duration: 0.5}}
     whileInView={{opacity: 1, y: 0}}
-    className='w-screen -ml-[50px] mt-10 bg-[#090909] h-fit p-16 pt-24 rounded-t-[80px] mb-10'>
+    className='w-screen lg:-ml-[50px] md:-ml-9 -ml-3 mt-10 bg-[#090909] h-fit justify-center items-center lg:p-16 md:p-10 p-4 pt-24 lg:pt-28 md:pt-28 rounded-t-[80px] lg:mb-10'>
       <motion.div 
       initial={{
         y: directionBottom ? -90 : 90,
@@ -113,13 +113,13 @@ export default function Skills({directionBottom}: Props) {
       }}
       transition={{duration: 0.5}}
       whileInView={{opacity: 1, y: 0}}
-      className='grid grid-cols-4 gap-14'>
+      className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14'>
         {skillsData.map((skill, index) => (
           <div key={index} >
-            <div className='bg-[#212121] w-72 h-72 rounded-3xl hover:bg-[#5A5A5A] duration-500'>
+            <div className='bg-[#212121] lg:w-72 lg:h-72 md:w-56 md:h-56  w-36 h-36 rounded-3xl hover:bg-[#5A5A5A] duration-500'>
               <div className='flex flex-col items-center justify-center w-full h-full space-y-4'>
-                <Image src={skill.icon} alt={skill.title} width={100} height={100}/>
-                <p className='text-lg font-semibold font-rubik text-paper'>{skill.title}</p>
+                <Image src={skill.icon} alt={skill.title} width={90} height={90}/>
+                <p className='font-semibold lg:text-lg text-md font-rubik text-paper'>{skill.title}</p>
               </div>
             </div>
           </div>
