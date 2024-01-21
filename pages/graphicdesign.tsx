@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IoArrowBack, IoArrowUpCircleSharp } from "react-icons/io5";
-import {motion} from "framer-motion";
+import {motion, Transition} from "framer-motion";
 
 export default function GraphicDesign () {
     return(
@@ -51,7 +51,7 @@ export default function GraphicDesign () {
             type: "spring",
             damping: 10,
             repeatType: "reverse"
-            }}
+            } as Transition}
             className='mt-8'><Link href='/graphicdesign'><IoArrowUpCircleSharp className="text-primary" size={60}/></Link></motion.button>
             </div>
 

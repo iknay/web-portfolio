@@ -1,5 +1,5 @@
 import React, { FormEvent, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, Transition } from 'framer-motion';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { MaterialInput } from './material-input';
 import Snackbar from '@mui/material/Snackbar';
@@ -149,9 +149,9 @@ function ContactMe() {
             type: "spring",
             damping: 10,
             repeatType: "reverse"
-            }}
+            } as Transition }
             className='pt-10'><Link href='#main'><IoArrowUpCircleSharp className="text-primary" size={60}/></Link></motion.button>
-            </div>
+      </div>
       
       <Snackbar
         open={open}
