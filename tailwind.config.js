@@ -7,9 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#333333',
-        secondary: "#F9A7B0",
+        primary: '#272727',
+        secondary: "#F25477",
         paper: "#EFEEEE",
+      },
+      fontFamily: {
+        "rubik": ["Rubik", "sans-serif"],
       },
       fontSize: {
         '6xl': '96px',

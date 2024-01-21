@@ -11,7 +11,7 @@ export default function Projects () {
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
     className='relative flex flex-col max-w-full min-h-screen mb-0 overflow-hidden text-left text-primary lg:mb-4'>
-      <h1 className='mb-8 text-lg font-normal md:text-xl'>My Work</h1>
+      <h1 className='mb-8 text-lg font-normal lg:text-2xl'>My Work</h1>
 
       <div className='space-y-6'>
 

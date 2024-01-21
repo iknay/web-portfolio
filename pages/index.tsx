@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
   return (
 
-    <div className='overflow-x-hidden overflow-y-scroll bg-gradient scroll-smooth scrollbar-thumb-[#F08080]/80 scrollbar-thin scrollbar-track-white-400/20'>
+    <div className='overflow-x-hidden overflow-y-scroll bg-paper scroll-smooth scrollbar-thumb-[#F08080]/80 scrollbar-thin scrollbar-track-white-400/20'>
         <div className='h-screen margin '>
           <Head>
             <title>Yancee</title>

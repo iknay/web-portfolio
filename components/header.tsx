@@ -10,7 +10,7 @@ export default function Header({}: Props) {
 
   return (
     <header>
-      <div className="top-0 z-10 flex items-center justify-between w-full px-6 pt-6 md:h-24 bg-opacity-70 text-primary">
+      <div className="top-0 z-10 flex items-center justify-between md:h-24 bg-opacity-70 text-primary">
         <motion.div className="n-left" 
           initial={{x: -500, opacity: 0, scale: 0.6}}
           animate={{x: 0, opacity: 1, scale: 1}}

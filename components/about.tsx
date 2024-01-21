@@ -13,7 +13,7 @@ export default function About({}: Props) {
         <p className='leading-tight text-md lg:text-xl'>I&apos;m passionate for creating engaging and intuitive web applications.
            I create responsive and scalable web experiences, ensuring seamless user interactions from concept to completion.</p>
         <Link href="#contactme">
-          <button id='#contactme' className='flex px-8 py-1 text-lg border-2 rounded-full button border-primary lg:text-xl text-primary'>Say Hello
+          <button id='#contactme' className='flex px-8 py-1 mt-4 text-lg border-2 rounded-full button border-primary lg:text-xl text-primary'>Say Hello
           <Image src="/assets/hi.png" alt="hand wave" width={50} height={50}/>
           </button>
         </Link>

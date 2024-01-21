@@ -6,7 +6,7 @@ import {motion, Transition} from "framer-motion";
 
 export default function GraphicDesign () {
     return(
-        <div className="min-h-screen overflow-x-hidden pb-6 overflow-y-scroll bg-gradient scroll-smooth scrollbar-thumb-[#F08080]/80 scrollbar-thin scrollbar-track-white-400/20 ">
+        <div className="min-h-screen overflow-x-hidden pb-6 overflow-y-scroll bg-paper scroll-smooth scrollbar-thumb-[#F25477]/80 scrollbar-thin scrollbar-track-white-400/20 ">
 
             <div className="flex">
                 <div className="absolute top-10 left-10">
