@@ -119,7 +119,6 @@ select:-webkit-autofill:focus {
   transform-origin: bottom left;
 }
 
-
 @media (min-width: 319px) and (max-width: 480px) {
   .margin {
     margin: 0px 12px 0px 12px;
@@ -146,6 +145,7 @@ select:-webkit-autofill:focus {
     flex-direction: column;
     margin-right: -20px;
   }
+
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {

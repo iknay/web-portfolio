@@ -105,7 +105,7 @@ export default function Skills({directionBottom}: Props) {
     }}
     transition={{duration: 0.5}}
     whileInView={{opacity: 1, y: 0}}
-    className='w-screen lg:-ml-[50px] md:-ml-9 -ml-3 mt-10 bg-[#090909] h-fit justify-center items-center lg:p-16 md:p-10 p-4 pt-24 lg:pt-28 md:pt-28 rounded-t-[80px] lg:mb-10'>
+    className='w-full mt-10 bg-[#090909] h-fit md:p-16 p-12 md:pb-20 md:pt-20 pt-12 pb-12 rounded-[80px] lg:mb-10'>
       <motion.div 
       initial={{
         y: directionBottom ? -90 : 90,
@@ -113,13 +113,13 @@ export default function Skills({directionBottom}: Props) {
       }}
       transition={{duration: 0.5}}
       whileInView={{opacity: 1, y: 0}}
-      className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14'>
+      className='grid grid-cols-2 gap-5 md:gap-10 md:grid-cols-4 lg:grid-cols-5'>
         {skillsData.map((skill, index) => (
-          <div key={index} >
-            <div className='bg-[#212121] lg:w-72 lg:h-72 md:w-56 md:h-56  w-36 h-36 rounded-3xl hover:bg-[#5A5A5A] duration-500'>
+          <div key={index} className='flex items-center justify-center'>
+            <div className='bg-[#212121] lg:w-56 lg:h-56 md:w-44 md:h-44 w-28 h-28 rounded-3xl hover:bg-[#5A5A5A] duration-500'>
               <div className='flex flex-col items-center justify-center w-full h-full space-y-4'>
-                <Image src={skill.icon} alt={skill.title} width={90} height={90}/>
-                <p className='font-semibold lg:text-lg text-md font-rubik text-paper'>{skill.title}</p>
+                <Image src={skill.icon} alt={skill.title} className='w-12 h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32'/>
+                <p className='text-sm font-semibold lg:text-lg md:text-md font-rubik text-paper'>{skill.title}</p>
               </div>
             </div>
           </div>

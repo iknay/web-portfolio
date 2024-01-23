@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: '#272727',
         secondary: "#F25477",
-        paper: "#EFEEEE",
+        paper: "#fff",
       },
       fontFamily: {
         "rubik": ["Rubik", "sans-serif"],

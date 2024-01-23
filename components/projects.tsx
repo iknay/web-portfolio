@@ -44,11 +44,23 @@ export default function Projects () {
         <div className='flex justify-between pb-16 border-b-2 border-solid imageHover2 border-primary'>
           <div className='w-3/4 '>
             <h2 className='text-xl font-semibold lg:text-3xl'>Lekto</h2>
-            <p className='font-light'>Lekto is a Speech Recognition application that utilizes machine learning to translate
+            <p className='font-light'>Lekto is a Speech Recognition mobile application that utilizes machine learning to translate
              non-Tagalog dialects into Tagalog using React Native and Python + flask.</p>
           </div>
           <div className='flex items-end justify-center mr-5'>
-            <BsFillArrowUpRightCircleFill size={60} color='#9A9B9E'/>
+          <a href='https://drive.google.com/file/d/1rfyfQRXHwyLD7Z0ip-JWtPcatbOK6qFR/view?usp=sharing' target="_blank" rel='noreferrer noopener'><BsFillArrowUpRightCircleFill size={60}/></a>
+          </div>
+        </div>
+
+        <div className='flex justify-between pb-16 border-b-2 border-solid imageHover2 border-primary'>
+          <div className='w-3/4 '>
+            <h2 className='text-xl font-semibold lg:text-3xl'>Trace It</h2>
+            <p className='font-light'>Enhanced contact tracing app with a user-friendly interface and mobile capabilities. 
+            Scan QR codes offline, store locations, and seamlessly sync with the database upon internet reconnection. This innovative solution 
+            contributes to a safer pandemic response by eliminating the use of physical forms and reducing potential virus transmission risks.</p>
+          </div>
+          <div className='flex items-end justify-center mr-5'>
+          <a href='https://drive.google.com/file/d/1uburE-NzI82M2nMaDcpQqhSeGM6aiGmw/view?usp=sharing' target="_blank" rel='noreferrer noopener'><BsFillArrowUpRightCircleFill size={60}/></a>
           </div>
         </div>
 
