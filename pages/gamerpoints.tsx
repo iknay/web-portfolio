@@ -37,28 +37,28 @@ export default function GamerPoints () {
                     alt="gamerpoints"
                     width={1150}
                     height={1150}
-                    className="mr-4" // Adjust margin as needed
+                    className="mr-4" 
                 />
                 <motion.img
                     src="/assets/gp_homescreen.png"
                     alt="gamerpoints"
                     width={1150}
                     height={1150}
-                    className="mr-4" // Adjust margin as needed
+                    className="mr-4" 
                 />
                 <motion.img
                     src="/assets/gp_allgames.png"
                     alt="gamerpoints"
                     width={1150}
                     height={1150}
-                    className="mr-4" // Adjust margin as needed
+                    className="mr-4" 
                 />
                 <motion.img
                     src="/assets/gp_slideshow.png"
                     alt="gamerpoints"
                     width={1150}
                     height={1150}
-                    className="mr-4" // Adjust margin as needed
+                    className="mr-4" 
                 />
                 <motion.img
                     src="/assets/gp_invite.png"
