@@ -12,8 +12,8 @@ export default function Main({ }: Props) {
   return (
     <div className='w-full h-screen'>
       <Header/> 
-        <div className='lg:flex lg:items-end lg:justify-end lg:h-[90%] space-y-6 lg:space-y-0 lg:mt-0 mt-60'>
-        <h1 className='xl:text-[238px] lg:text-[220px] text-5xl leading-none justify-end text-secondary font-rubik font-medium items-end'>Front End Developer</h1>
+        <div className='lg:flex h-[90%] grid items-end'>
+        <h1 className=' xl:text-[238px] lg:text-[220px] md:text-5xl text-3xl leading-none text-secondary font-rubik font-medium'>Front End Developer</h1>
         <div>
           {/* <p>specializing in front-end development</p> */}
           <a href='https://drive.google.com/file/d/16xgIEU1lybUNrBSlf4zOnozazk9VY9e8/view?usp=sharing' target = "_blank" rel='noreferrer noopener'>

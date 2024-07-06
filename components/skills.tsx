@@ -113,13 +113,13 @@ export default function Skills({directionBottom}: Props) {
       }}
       transition={{duration: 0.5}}
       whileInView={{opacity: 1, y: 0}}
-      className='grid grid-cols-2 gap-5 md:gap-10 md:grid-cols-4 lg:grid-cols-5'>
+      className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5'>
         {skillsData.map((skill, index) => (
           <div key={index} className='flex items-center justify-center'>
-            <div className='bg-[#212121] lg:w-56 lg:h-56 md:w-44 md:h-44 w-28 h-28 rounded-3xl hover:bg-[#5A5A5A] duration-500'>
+            <div className='bg-[#212121] lg:w-96 w-56 aspect-square rounded-3xl hover:bg-[#5A5A5A] duration-500'>
               <div className='flex flex-col items-center justify-center w-full h-full space-y-4'>
-                <Image src={skill.icon} alt={skill.title} className='w-12 h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32'/>
-                <p className='text-sm font-semibold lg:text-lg md:text-md font-rubik text-paper'>{skill.title}</p>
+                <Image src={skill.icon} alt={skill.title} className='w-12 md:w-20 lg:w-24 aspect-square'/>
+                <p className='text-sm font-semibold lg:text-lg font-rubik text-paper'>{skill.title}</p>
               </div>
             </div>
           </div>

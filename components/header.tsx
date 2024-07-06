@@ -28,7 +28,7 @@ export default function Header({}: Props) {
           initial={{x: 500, opacity: 0, scale: 0.5}}
           animate={{x: 0, opacity: 1, scale: 1}}
           transition={{duration: 1.5,}}
-          className='text-sm lg:text-md navLinks'>
+          className='pr-4 text-sm lg:pr-0 lg:text-md navLinks'>
             <Link href='#main'>
               <button className='hidden'></button>
             </Link>

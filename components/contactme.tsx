@@ -79,7 +79,7 @@ function ContactMe() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative flex flex-col items-center justify-center h-screen max-w-full overflow-hidden text-primary'
+      className='relative flex flex-col items-center justify-center h-screen max-w-full overflow-hidden pt-14 text-primary'
     >
       <div className='border-2 border-solid rounded-[80px] border-primary lg:pl-20 lg:pr-20 pl-5 pr-5 pt-10 pb-10'>
       <h1 className='pb-8 font-normal text-center text-md lg:text-xl'>Drop me a message</h1>
